@@ -1,18 +1,13 @@
-# AI 模型六维能力评测
+# AI 模型六维评测数据
 
-跟踪 Agentic、编程、推理、长文本、创意写作和数据分析能力。分数为 0–100，保留来源等级与证据。
+当前 models.json 收录 21 个模型的基础身份信息：模型 ID、名称、公司、国家代码和数据日期。维度评分与评测证据暂未填充。
 
-> 当前两条为结构示例，所有分数和口碑均为未核验的演示占位值，不代表真实评测结论。
+国家代码按提供方总部所在国家映射；原始文件未包含国家字段。
 
-| 模型 | 提供方 | Agentic | 编程能力 | 推理能力 | 长文本能力 | 创意写作 | 数据分析 | 一句话口碑 |
-|---|---|---:|---:|---:|---:|---:|---:|---|
-| GPT-5 (示例) | OpenAI | 88 (A) | 90 (A) | 92 (S) | 86 (A) | 84 (A) | 87 (A) | 示例数据，待核验。 |
-| Claude (示例) | Anthropic | 86 (A) | 88 (A) | 90 (A) | 93 (S) | 91 (S) | 85 (A) | 示例数据，待核验。 |
+| 代码 | 国家 |
+|---|---|
+| US | 美国 |
+| CN | 中国 |
+| FR | 法国 |
 
-## Schema
-
-模型字段：id、name、provider、last_updated、reputation、dimensions。六个维度键为 agentic、coding、reasoning、long_context、creative_writing、data_analysis。维度对象字段为 score、tier、source_tier、evidence。来源等级为 T1_Benchmark、T2_Community、T3_Estimated 或 null。
-
-## 校验
-
-运行 python scripts/validate.py 检查 JSON、必填字段、分数范围和空评分，并查看六维完整率。
+运行 python scripts/validate.py 可检查基础字段，并查看六维评分完整率。

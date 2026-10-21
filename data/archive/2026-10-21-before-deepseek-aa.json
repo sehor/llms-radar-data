@@ -1,0 +1,163 @@
+[
+  {
+    "id": "deepseek-v4.1-flash-1017",
+    "name": "DeepSeek V4.1 Flash (1017)",
+    "provider": "DeepSeek",
+    "country": "CN",
+    "last_updated": "2026-10-21",
+    "dimensions": {
+      "agentic": {
+        "score": 90,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "已核官方 2026-10-17 升级：1017 的 Automation-Bench v1.0.6 60.5%、Agents’ Last Exam 35.4%。不再使用 9 月 54.8/31.8 作为当前成绩；不同执行框架不可直接同比。",
+        "sources": [
+          "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017"
+        ],
+        "confidence": "medium",
+        "evaluated_version": "DeepSeek-V4.1-Flash-1017",
+        "vendor_score": 90,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {
+          "Automation-Bench v1.0.6": {
+            "value": "60.5%",
+            "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+            "configuration": "1017; TB4 Claude Code / DeepSWE Mini-SWE-V2 where applicable",
+            "retrieved_at": "2026-10-21"
+          },
+          "Agents’ Last Exam": {
+            "value": "35.4%",
+            "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+            "configuration": "1017; TB4 Claude Code / DeepSWE Mini-SWE-V2 where applicable",
+            "retrieved_at": "2026-10-21"
+          }
+        }
+      },
+      "coding": {
+        "score": 90,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "1017 官方 DeepSWE v1.1 77.0%（Mini-SWE-V2）、Terminal-Bench 4.0 42.3%（Claude Code）。换框架也是成绩变化的因素，不能把全部差值都归因于权重升级。",
+        "sources": [
+          "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017"
+        ],
+        "confidence": "medium",
+        "evaluated_version": "DeepSeek-V4.1-Flash-1017",
+        "vendor_score": 90,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {
+          "DeepSWE v1.1": {
+            "value": "77.0%",
+            "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+            "configuration": "1017; TB4 Claude Code / DeepSWE Mini-SWE-V2 where applicable",
+            "retrieved_at": "2026-10-21"
+          },
+          "Terminal-Bench 4.0": {
+            "value": "42.3%",
+            "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+            "configuration": "1017; TB4 Claude Code / DeepSWE Mini-SWE-V2 where applicable",
+            "retrieved_at": "2026-10-21"
+          }
+        }
+      },
+      "reasoning": {
+        "score": 90,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "1017 官方 HLE 无工具 full 42.6%，text-only 44.0%。两种题集分开；没有借用旧版 GPQA，也不把有工具成绩当无工具能力。",
+        "sources": [
+          "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017"
+        ],
+        "confidence": "medium",
+        "evaluated_version": "DeepSeek-V4.1-Flash-1017",
+        "vendor_score": 90,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {
+          "HLE w/o tools full": {
+            "value": "42.6%",
+            "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+            "configuration": "1017; TB4 Claude Code / DeepSWE Mini-SWE-V2 where applicable",
+            "retrieved_at": "2026-10-21"
+          },
+          "HLE w/o tools text-only": {
+            "value": "44.0%",
+            "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+            "configuration": "1017; TB4 Claude Code / DeepSWE Mini-SWE-V2 where applicable",
+            "retrieved_at": "2026-10-21"
+          }
+        }
+      },
+      "long_context": {
+        "score": 85,
+        "tier": "A",
+        "source_tier": "T3_Estimated",
+        "evidence": "1017 官方保持 1M 窗口，但未核到该快照分长度结果。AA 未带 1017 标识的 V4.1 Flash max 有 AA-LCR v1.1 84%，仅作历史参照；当前 85 分是保守估算，不宣称 1017 已实测 84%。",
+        "sources": [
+          "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+          "https://artificialanalysis.ai/models/comparisons/deepseek-v4-1-flash-vs-deepseek-v4-pro"
+        ],
+        "confidence": "low",
+        "evaluated_version": "1017 estimate; historical V4.1-Flash AA row",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "creative_writing": {
+        "score": 80,
+        "tier": "A",
+        "source_tier": "T2_Community",
+        "evidence": "英文 ToneBench 已明确测试 1017 max，属于长视频脚本，不是小说。中文 1017 首发小测试侧重短文约束；9 月匿名小说及 RP 反馈仅作旧版背景。中英证据覆盖不足，暂定 A 下沿，不把旧版口碑冒充新版。",
+        "sources": [
+          "https://benchmark.towardsai.com/models/deepseek-v4-1-flash-1017-max-or.html",
+          "https://jishuzhan.net/article/2111755771935744002"
+        ],
+        "confidence": "low",
+        "evaluated_version": "DeepSeek-V4.1-Flash-1017",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "data_analysis": {
+        "score": 85,
+        "tier": "A",
+        "source_tier": "T1_Benchmark",
+        "evidence": "1017 官方 Chartography with tools 83.0%，支持图表分析维度。Plotly 的 36/43 是 9 月 23 日测的旧版，仅作历史背景；1017 的 SQL/统计全任务结果待复核。",
+        "sources": [
+          "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+          "https://plotly.com/blog/deepseek-v4-1-flash-data-analysis-benchmark/"
+        ],
+        "confidence": "low",
+        "evaluated_version": "1017 Chartography; September Plotly historical only",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {
+          "Chartography with tools": {
+            "value": "83.0%",
+            "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+            "configuration": "1017; with tools; chart analysis only",
+            "retrieved_at": "2026-10-21"
+          }
+        }
+      }
+    },
+    "evaluation_notes": "2026-10-21 batch-01版本升级/锁定；评分为编辑梯队映射，不是原始基准分。版本配置、三源分映射与证据缺口见 data/research/2026-10-21-batch-01.md。此前记录保存在 previous_record。",
+    "current_version": "DeepSeek-V4.1-Flash-1017",
+    "is_active": true,
+    "version_verified_at": "2026-10-21",
+    "previous_record": "data/archive/2026-10-21-before-version-upgrades.json",
+    "aliases": [
+      "deepseek-v4.1-flash"
+    ],
+    "version_policy": "固定1017权重快照；此标识不宣称官方API接受同名快照参数。",
+    "version_sources": [
+      "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017"
+    ],
+    "weights_model_id": "deepseek-ai/DeepSeek-V4.1-Flash-1017"
+  }
+]

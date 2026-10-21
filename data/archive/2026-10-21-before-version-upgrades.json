@@ -1,0 +1,403 @@
+[
+  {
+    "id": "claude-sonnet-5",
+    "name": "Claude Sonnet 5",
+    "provider": "Anthropic",
+    "country": "US",
+    "last_updated": "2026-10-19",
+    "dimensions": {
+      "agentic": {
+        "score": 85,
+        "tier": "A",
+        "source_tier": "T1_Benchmark",
+        "evidence": "Anthropic 发布页官方图表：OSWorld-Verified 81.2%，具备浏览器、终端和多步执行能力。该版本与 Astra/Fable 的 OSWorld 2.0 不可直接横比；按本轮前沿参照定为 A 级。",
+        "sources": [
+          "https://www.anthropic.com/news/claude-sonnet-5"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "coding": {
+        "score": 85,
+        "tier": "A",
+        "source_tier": "T1_Benchmark",
+        "evidence": "发布页官方图表 SWE-bench Pro 63.2%、Terminal-Bench 2.1 80.4%。与 Terminal-Bench 4.0 不同版本，禁止按百分比大小排序。此处评分为梯队判断。",
+        "sources": [
+          "https://www.anthropic.com/news/claude-sonnet-5"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "reasoning": {
+        "score": 85,
+        "tier": "A",
+        "source_tier": "T1_Benchmark",
+        "evidence": "发布页官方图表 HLE 无工具 43.2%、有工具 57.4%。无工具表现低于本批 Fable 的官方成绩；不同配置/发布时间仍限制比较。",
+        "sources": [
+          "https://www.anthropic.com/news/claude-sonnet-5"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "long_context": {
+        "score": 80,
+        "tier": "A",
+        "source_tier": "T3_Estimated",
+        "evidence": "官方规格为 1M 窗口、128K 输出；未取得可靠的本型号 RULER/MRCR 分长度曲线。中文 Foreverse 小样本十万字生成压力测试报告套语增多、章节缩水，但生成耐力不等于检索准确率。A 级为保守估算，不能称为已验证的百万有效上下文。",
+        "sources": [
+          "https://platform.claude.com/docs/en/models/sonnet-5/overview",
+          "https://foreverse.app/zh/blog/which-model-writes-like-a-human"
+        ],
+        "confidence": "low",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "creative_writing": {
+        "score": 80,
+        "tier": "A",
+        "source_tier": "T2_Community",
+        "evidence": "英文 Noren 同题奇幻测试公开六份输出，认为 Sonnet 文本干净但场景选择偏安全；带自家产品提示模板，样本很小。ToneBench max 写作分 79.2/100，仅测长视频脚本。中文 Foreverse 单篇/十万字测试提示段末点题与长程套语问题；综合为 A 级下沿，非直接套用脚本分。",
+        "sources": [
+          "https://usenoren.ai/blog/claude-sonnet-5-writing-test",
+          "https://benchmark.towardsai.com/models/claude-sonnet-5-max.html",
+          "https://foreverse.app/zh/blog/which-model-writes-like-a-human"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "data_analysis": {
+        "score": 80,
+        "tier": "A",
+        "source_tier": "T3_Estimated",
+        "evidence": "检索 DABstep/BIRD/DataBench 未核到本型号可直接采用的成绩。Eurostat 原始研究用 Sonnet 5 跑 30 题、四种条件、三次重复，强调语义规范和元数据决定结果；摘要未提供可录入的各条件准确率。官方发布页 ClickHouse 伙伴反馈支持分析用途，故只给低置信度 A 级估算；不借用 Sonnet 5.5 或裁判模型身份的成绩。",
+        "sources": [
+          "https://arxiv.org/abs/2609.22222",
+          "https://www.anthropic.com/news/claude-sonnet-5"
+        ],
+        "confidence": "low",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      }
+    },
+    "evaluation_notes": "2026-10-19 batch-01；0–100 为编辑梯队评分，非原始基准分；同档微小差异不代表统计显著性。方法与检索记录见 data/research/2026-10-19-batch-01.md。",
+    "is_active": true
+  },
+  {
+    "id": "qwen3.8-max-0902",
+    "name": "Qwen3.8-Max-0902",
+    "provider": "Alibaba / Qwen",
+    "country": "CN",
+    "last_updated": "2026-10-19",
+    "dimensions": {
+      "agentic": {
+        "score": 90,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "AA 明确标注 0902 配置：AutomationBench-AA 56%、AA-Briefcase v1.1 Elo 1615。不是 Z.ai 表中的 AutomationBench 原版；不借用 8 月初版本。",
+        "sources": [
+          "https://artificialanalysis.ai/models/comparisons/qwen3-8-max-vs-gpt-5-6-sol-xhigh"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "coding": {
+        "score": 90,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "AA 0902：Terminal-Bench 4.0 39%、SciCode 52%（页面取整）。可支撑较强工程能力，非前端偏好榜第一就等于全面编码第一。",
+        "sources": [
+          "https://artificialanalysis.ai/models/comparisons/qwen3-8-max-vs-gpt-5-6-sol-xhigh"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "reasoning": {
+        "score": 90,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "AA 0902：HLE 43%、CritPt 18%（取整）。与官方带工具 HLE 不混用；不从复合 Intelligence Index 直接当推理分。",
+        "sources": [
+          "https://artificialanalysis.ai/models/comparisons/qwen3-8-max-vs-gpt-5-6-sol-xhigh"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "long_context": {
+        "score": 85,
+        "tier": "A",
+        "source_tier": "T1_Benchmark",
+        "evidence": "AA 0902 的 AA-LCR v1.1 80%；阿里官方快照规格 1M。AA-LCR 的任务覆盖不能证明 1M 全长度可靠，MRCR/RULER 分长度结果待补。",
+        "sources": [
+          "https://artificialanalysis.ai/models/comparisons/qwen3-8-max-vs-gpt-5-6-sol-xhigh",
+          "https://www.alibabacloud.com/help/en/model-studio/qwen3-8-max"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "creative_writing": {
+        "score": 80,
+        "tier": "A",
+        "source_tier": "T2_Community",
+        "evidence": "英文检索命中 Quantslant 原始多语言写作测试，实际语言是波兰语：0902 low 配置 76.4/100，等预算 68.2，文本正确但有模板感。中文检索未获可确认 0902 的同题文学测试；不把未标快照的 Qwen3.8 Max 成绩当本型号中文成绩。",
+        "sources": [
+          "https://quantslant.com/qwen3-8-max-test-results-pricing/",
+          "https://www.alibabacloud.com/help/en/model-studio/qwen3-8-max"
+        ],
+        "confidence": "low",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "data_analysis": {
+        "score": 80,
+        "tier": "A",
+        "source_tier": "T3_Estimated",
+        "evidence": "DABstep/BIRD 与 SQL/pandas 实测检索未获得足够的 0902 一手专门分析成绩；官方仅确认图表推理和文档解析加强。AA GDP.pdf 23% 属文档任务，不能当数据分析分；因此保守估算 A 下沿。",
+        "sources": [
+          "https://www.alibabacloud.com/help/en/model-studio/qwen3-8-max",
+          "https://artificialanalysis.ai/models/comparisons/qwen3-8-max-vs-gpt-5-6-sol-xhigh"
+        ],
+        "confidence": "low",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      }
+    },
+    "evaluation_notes": "2026-10-19 batch-02；0–100 为编辑梯队映射而非原始基准分；方法、检索与证据缺口见 data/research/2026-10-19-batch-02.md。",
+    "is_active": true
+  },
+  {
+    "id": "deepseek-v4.1-flash",
+    "name": "DeepSeek V4.1 Flash",
+    "provider": "DeepSeek",
+    "country": "CN",
+    "last_updated": "2026-10-19",
+    "dimensions": {
+      "agentic": {
+        "score": 90,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "已核官方 2026-10-17 升级：1017 的 Automation-Bench v1.0.6 60.5%、Agents’ Last Exam 35.4%。不再使用 9 月 54.8/31.8 作为当前成绩；不同执行框架不可直接同比。",
+        "sources": [
+          "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017"
+        ],
+        "confidence": "medium",
+        "evaluated_version": "DeepSeek-V4.1-Flash-1017",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "coding": {
+        "score": 90,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "1017 官方 DeepSWE v1.1 77.0%（Mini-SWE-V2）、Terminal-Bench 4.0 42.3%（Claude Code）。换框架也是成绩变化的因素，不能把全部差值都归因于权重升级。",
+        "sources": [
+          "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017"
+        ],
+        "confidence": "medium",
+        "evaluated_version": "DeepSeek-V4.1-Flash-1017",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "reasoning": {
+        "score": 90,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "1017 官方 HLE 无工具 full 42.6%，text-only 44.0%。两种题集分开；没有借用旧版 GPQA，也不把有工具成绩当无工具能力。",
+        "sources": [
+          "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017"
+        ],
+        "confidence": "medium",
+        "evaluated_version": "DeepSeek-V4.1-Flash-1017",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "long_context": {
+        "score": 85,
+        "tier": "A",
+        "source_tier": "T3_Estimated",
+        "evidence": "1017 官方保持 1M 窗口，但未核到该快照分长度结果。AA 未带 1017 标识的 V4.1 Flash max 有 AA-LCR v1.1 84%，仅作历史参照；当前 85 分是保守估算，不宣称 1017 已实测 84%。",
+        "sources": [
+          "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+          "https://artificialanalysis.ai/models/comparisons/deepseek-v4-1-flash-vs-deepseek-v4-pro"
+        ],
+        "confidence": "low",
+        "evaluated_version": "1017 estimate; historical V4.1-Flash AA row",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "creative_writing": {
+        "score": 80,
+        "tier": "A",
+        "source_tier": "T2_Community",
+        "evidence": "英文 ToneBench 已明确测试 1017 max，属于长视频脚本，不是小说。中文 1017 首发小测试侧重短文约束；9 月匿名小说及 RP 反馈仅作旧版背景。中英证据覆盖不足，暂定 A 下沿，不把旧版口碑冒充新版。",
+        "sources": [
+          "https://benchmark.towardsai.com/models/deepseek-v4-1-flash-1017-max-or.html",
+          "https://jishuzhan.net/article/2111755771935744002"
+        ],
+        "confidence": "low",
+        "evaluated_version": "DeepSeek-V4.1-Flash-1017",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "data_analysis": {
+        "score": 85,
+        "tier": "A",
+        "source_tier": "T1_Benchmark",
+        "evidence": "1017 官方 Chartography with tools 83.0%，支持图表分析维度。Plotly 的 36/43 是 9 月 23 日测的旧版，仅作历史背景；1017 的 SQL/统计全任务结果待复核。",
+        "sources": [
+          "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+          "https://plotly.com/blog/deepseek-v4-1-flash-data-analysis-benchmark/"
+        ],
+        "confidence": "low",
+        "evaluated_version": "1017 Chartography; September Plotly historical only",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      }
+    },
+    "evaluation_notes": "2026-10-19 batch-03；评分是编辑梯队映射，非基准直接平均；版本和证据缺口见 data/research/2026-10-19-batch-03.md。",
+    "current_version": "DeepSeek-V4.1-Flash-1017",
+    "is_active": true
+  },
+  {
+    "id": "mimo-v2.5-pro",
+    "name": "MiMo-V2.5-Pro",
+    "provider": "Xiaomi",
+    "country": "CN",
+    "last_updated": "2026-10-19",
+    "dimensions": {
+      "agentic": {
+        "score": 80,
+        "tier": "A",
+        "source_tier": "T1_Benchmark",
+        "evidence": "独立 AA AutomationBench-AA 14%；PinchBench 2.0.0 的一次 Official OpenClaw 提交总分 88%，覆盖较多基础自动化任务。任务难度与工具框架不同，不能互相替代或只摘高分。",
+        "sources": [
+          "https://artificialanalysis.ai/models/comparisons/mimo-v2-5-pro-vs-gpt-5-2-medium",
+          "https://pinchbench.com/submission/87439bfb-78ea-467d-bc6b-56a970c116f2"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "coding": {
+        "score": 80,
+        "tier": "A",
+        "source_tier": "T1_Benchmark",
+        "evidence": "官方 instruct 关联评测 SWE-bench Pro 57.2%、Verified 78.9%；AA Terminal-Bench 4.0 页面取整约 0%。不采用 Base 模型 LiveCodeBench/HumanEval 作为 instruct 成绩。",
+        "sources": [
+          "https://huggingface.co/XiaomiMiMo/MiMo-V2.5-Pro",
+          "https://artificialanalysis.ai/models/comparisons/mimo-v2-5-pro-vs-gpt-5-2-medium"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "reasoning": {
+        "score": 85,
+        "tier": "A",
+        "source_tier": "T1_Benchmark",
+        "evidence": "AA reasoning 配置 HLE 36%、CritPt 4%（取整）。官方卡 66.7% GPQA 为 Base 5-shot，未充当本 instruct 的 GPQA；不借用 V2.6 成绩。",
+        "sources": [
+          "https://artificialanalysis.ai/models/comparisons/mimo-v2-5-pro-vs-gpt-5-2-medium"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "long_context": {
+        "score": 85,
+        "tier": "A",
+        "source_tier": "T1_Benchmark",
+        "evidence": "官方 post-training GraphWalks：512K BFS/Parents 为 0.56/0.92，1M 为 0.37/0.62；保持 32K–1M 原任务定义。有明确长程衰减，不能将窗口长度等同全篇可靠理解。",
+        "sources": [
+          "https://huggingface.co/XiaomiMiMo/MiMo-V2.5-Pro"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "creative_writing": {
+        "score": 75,
+        "tier": "B",
+        "source_tier": "T2_Community",
+        "evidence": "英文 SillyTavern 原始用户报告肯定悬念、角色一致性；中文产品任务测试肯定草稿，但 SoloEnt 三次武侠首章盲评处于末档。任务和提示模板差异显著，综合 B，不能用单个 RP 好评或单题高分概括文学质量。",
+        "sources": [
+          "https://www.reddit.com/r/SillyTavernAI/comments/1u30s6g/remember_when_i_said_i_like_mimo_i_was_wrong_i/",
+          "https://www.woshipm.com/ai/6407526.html",
+          "https://benchmark.soloent.ai/en/reports/writingflow_18models/"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "data_analysis": {
+        "score": 80,
+        "tier": "A",
+        "source_tier": "T1_Benchmark",
+        "evidence": "OmicOS-BiomniBench 原始结果：MiMo-V2.5-Pro 生物数据分析 capability mean 67.1%，all-50 mean 65.8%。前者排除已记录的问题题目/基础设施失败；50 任务、模型裁判且 agent 源码待开放，不能外推一般商业分析。",
+        "sources": [
+          "https://github.com/omicverse/OmicOS-BiomniBench"
+        ],
+        "confidence": "low",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      }
+    },
+    "evaluation_notes": "2026-10-19 batch-03；评分是编辑梯队映射，非基准直接平均；版本和证据缺口见 data/research/2026-10-19-batch-03.md。",
+    "is_active": true
+  }
+]

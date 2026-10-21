@@ -1,0 +1,1682 @@
+[
+  {
+    "id": "gpt-6-astra",
+    "name": "GPT-6 Astra",
+    "provider": "OpenAI",
+    "country": "US",
+    "last_updated": "2026-10-19",
+    "dimensions": {
+      "agentic": {
+        "score": 95,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "官方自报 Agents’ Last Exam 59.3%；AutomationBench 41.4%。S 级编辑映射，非基准百分比直接平均；依赖工具与执行框架。",
+        "sources": [
+          "https://openai.com/index/gpt-6-astra/"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "coding": {
+        "score": 95,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "官方自报 Terminal-Bench 4.0 57.9%、DeepSWE v1.1 74.1%。均为带工具的代码任务，不能当作纯代码生成或不同版本 Terminal-Bench 的同条件比较。",
+        "sources": [
+          "https://openai.com/index/gpt-6-astra/"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "reasoning": {
+        "score": 95,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "官方自报 GPQA Diamond 96.0%、HLE with tools 57.2%。HLE 含工具，不等于无工具推理；官方说明评测取各 effort 中最高结果。",
+        "sources": [
+          "https://openai.com/index/gpt-6-astra/"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "long_context": {
+        "score": 95,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "官方 MRCR v2 8-needle：256K–512K 为 100.0%，512K–1M 为 96.3%。这是多目标检索任务，不证明百万 token 小说整体理解或长期记忆同样可靠。",
+        "sources": [
+          "https://openai.com/index/gpt-6-astra/"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "creative_writing": {
+        "score": 85,
+        "tier": "A",
+        "source_tier": "T2_Community",
+        "evidence": "英文用户实测肯定叙事流畅和角色声音，但社区评价分歧。SeaBell 中英短篇同题测试偏向 Astra 胜过 Sol，评委来自参测模型家族且样本小。Hemmingway 自建故事盲评中落后 Fable 5.1；不外推为中文长篇排名。",
+        "sources": [
+          "https://www.reddit.com/r/WritingWithAI/comments/1wbfc18/chatgpt6_astra_high_on_creative_writing/",
+          "https://www.seabell.com/blog/gpt-6-astra-writing-review/",
+          "https://hemmingway.io/blog/claude-vs-chatgpt-for-writing/"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "data_analysis": {
+        "score": 95,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "Plotly/Mila 的 DataAnalyticsBench：43/43，五个隐藏洞察全部找到。43 题、20M 行数据仓库、Plotly Studio Embedded 框架和模型判分；不是通用数据分析满分。",
+        "sources": [
+          "https://plotly.com/blog/introducing-dataanalyticsbench/"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      }
+    },
+    "evaluation_notes": "2026-10-19 batch-01；0–100 为编辑梯队评分，非原始基准分；同档微小差异不代表统计显著性。方法与检索记录见 data/research/2026-10-19-batch-01.md。",
+    "is_active": true
+  },
+  {
+    "id": "claude-fable-5.1",
+    "name": "Claude Fable 5.1",
+    "provider": "Anthropic",
+    "country": "US",
+    "last_updated": "2026-10-19",
+    "dimensions": {
+      "agentic": {
+        "score": 95,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "Anthropic 自报 AutomationBench 31.4%；OSWorld 2.0 partial 77.9%、strict 41.7%，两种计分不可混用。生产安全策略开启，部分任务受策略及回退机制影响。",
+        "sources": [
+          "https://www.anthropic.com/claude-fable-and-mythos-5-1"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "coding": {
+        "score": 95,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "官方自报 Terminal-Bench 4.0 55.8%、CursorBench 3.2.0 73.4%。55.8% 对应 Fable，不能借用 Mythos 5.1 的 60.9%；执行框架与安全策略影响成绩。",
+        "sources": [
+          "https://www.anthropic.com/claude-fable-and-mythos-5-1"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "reasoning": {
+        "score": 95,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "官方 HLE 无工具 60.9%、有工具 65.0%。分别保留两种配置；这是前沿梯队的编辑映射，不把 65.0% 直接当六维评分。",
+        "sources": [
+          "https://www.anthropic.com/claude-fable-and-mythos-5-1"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "long_context": {
+        "score": 90,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "官方窗口 1M。独立 Signal65 PINNACLE 单次 thinking/API 测试：128K RIKER 检索 97.3、跨文档聚合 95.3；后者仍低于同测 Opus 5 的 97.0。未核到可复核的 512K–1M MRCR/RULER 曲线，不能用 128K 成绩代替 1M 有效上下文。",
+        "sources": [
+          "https://platform.claude.com/docs/en/models/fable-5-1/overview",
+          "https://pinnacle.signal65.com/articles/claude-fable-5-1-on-signal65-pinnacle/"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "creative_writing": {
+        "score": 90,
+        "tier": "S",
+        "source_tier": "T2_Community",
+        "evidence": "Hemmingway 自建英文故事盲评中对 Astra 为 86 胜/22 负/11 平；商业测评方、模型裁判，非人类文学共识。中文检索主要命中官方指南转述，缺少可靠同题小说实测：官方称套语较少但文字可能更密、更长，中文文学与翻译腔判断待补。",
+        "sources": [
+          "https://hemmingway.io/blog/claude-vs-chatgpt-for-writing/",
+          "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5-1"
+        ],
+        "confidence": "low",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "data_analysis": {
+        "score": 90,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "Signal65 PINNACLE 单次 thinking/API 实测：governed-data 工作 160/160，as-found data 96.7%，Data Analyst persona 居该轮首位。属于企业数据/工具任务，不能冒充 BIRD、DABstep 或通用统计推断成绩。",
+        "sources": [
+          "https://pinnacle.signal65.com/articles/claude-fable-5-1-on-signal65-pinnacle/"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      }
+    },
+    "evaluation_notes": "2026-10-19 batch-01；0–100 为编辑梯队评分，非原始基准分；同档微小差异不代表统计显著性。方法与检索记录见 data/research/2026-10-19-batch-01.md。",
+    "is_active": true
+  },
+  {
+    "id": "gemini-3.8-flash",
+    "name": "Gemini 3.8 Flash",
+    "provider": "Google",
+    "country": "US",
+    "last_updated": "2026-10-19",
+    "dimensions": {
+      "agentic": {
+        "score": 85,
+        "tier": "A",
+        "source_tier": "T1_Benchmark",
+        "evidence": "Google 自报 OSWorld 2.0 partial 59.0%（启用 batch tool）；Terminal-Bench 4.0 19.1%。工具执行仍有明显短板，不按较旧 terminal 版本高分直接定顶尖。",
+        "sources": [
+          "https://deepmind.google/models/model-cards/gemini-3-8-flash/"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "coding": {
+        "score": 90,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "官方 DeepSWE v1.1 73.7%、Terminal-Bench 2.1 89.4%。属于带执行框架的工程任务；不与 Terminal-Bench 4.0 混算。",
+        "sources": [
+          "https://deepmind.google/models/model-cards/gemini-3-8-flash/"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "reasoning": {
+        "score": 90,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "官方 HLE-Verified 54.9%。该版本不同于 HLE 原版，不能直接对照本项目其他 HLE 分数。",
+        "sources": [
+          "https://deepmind.google/models/model-cards/gemini-3-8-flash/"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "long_context": {
+        "score": 80,
+        "tier": "A",
+        "source_tier": "T3_Estimated",
+        "evidence": "官方窗口 1M；检索 MRCR/RULER 未取得本型号有效长度曲线。英文用户报告大上下文指令遗漏，只是个案且受 Antigravity 影响；据此给低置信度 A 级保守估算，非 1M 有效理解实测。",
+        "sources": [
+          "https://deepmind.google/models/model-cards/gemini-3-8-flash/",
+          "https://www.reddit.com/r/GoogleAntigravityCLI/comments/1w5nfmf/a_brief_impression_of_gemini_38_flash/"
+        ],
+        "confidence": "low",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "creative_writing": {
+        "score": 90,
+        "tier": "S",
+        "source_tier": "T2_Community",
+        "evidence": "英文 Genflick 三个同题短开场实测认为情节发现与场景计划清晰；无盲评。中文 Oil 原始体验肯定中文流畅，Linux.do 同时有 AI 味反馈；给 S 下沿，不能外推中文长篇持续性。",
+        "sources": [
+          "https://genflick.com/blog/muse-spark-vs-gemini-flash-scriptwriting",
+          "https://www.oiloil.org/articles/gemini-3-8-flash-hands-on",
+          "https://linux.do/t/topic/2855043"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "data_analysis": {
+        "score": 85,
+        "tier": "A",
+        "source_tier": "T1_Benchmark",
+        "evidence": "官方 Vals Finance Agent v2 61.4%、CharXiv Reasoning 无工具 86.2%。覆盖金融工作流与图表，不等于通用 SQL/统计分析；按有限覆盖映射 A。",
+        "sources": [
+          "https://deepmind.google/models/model-cards/gemini-3-8-flash/"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      }
+    },
+    "evaluation_notes": "2026-10-19 batch-02；0–100 为编辑梯队映射而非原始基准分；方法、检索与证据缺口见 data/research/2026-10-19-batch-02.md。",
+    "is_active": true
+  },
+  {
+    "id": "muse-spark-1.3",
+    "name": "Muse Spark 1.3",
+    "provider": "Meta",
+    "country": "US",
+    "last_updated": "2026-10-19",
+    "dimensions": {
+      "agentic": {
+        "score": 90,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "Meta max 配置：OSWorld 2.0 partial 66.9%、binary 32.0%；AutomationBench 49.6%。max 与 xhigh 不混合，部分计分不等于端到端成功率。",
+        "sources": [
+          "https://dev.meta.ai/models/muse-spark"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "coding": {
+        "score": 90,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "Meta max 自报 DeepSWE v1.1 75.4%、Terminal-Bench 2.1 88.8%。独立 AA max 约 86%，框架差异不能视为同次测试。",
+        "sources": [
+          "https://dev.meta.ai/models/muse-spark",
+          "https://artificialanalysis.ai/articles/muse-spark-1-3/"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "reasoning": {
+        "score": 90,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "AA 原始评测：GPQA Diamond 约 94%（max 与 xhigh 相近），HLE xhigh 约 47%，max 约高 2 个百分点；取整来自文章，不补造小数。",
+        "sources": [
+          "https://artificialanalysis.ai/articles/muse-spark-1-3/"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "long_context": {
+        "score": 95,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "Meta max MRCR：256K–512K 98.5%、512K–1M 98.1%；独立 AA-LCR 为 79%，低于前代 83%。检索很强不代表所有长文推理无衰减。",
+        "sources": [
+          "https://dev.meta.ai/models/muse-spark",
+          "https://artificialanalysis.ai/articles/muse-spark-1-3/"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "creative_writing": {
+        "score": 85,
+        "tier": "A",
+        "source_tier": "T2_Community",
+        "evidence": "Genflick 英文三题、每题每模型单次实测偏好其角色声音和家庭对话；Danieltenner 自由写作样本观察到温和抒情、反复安慰的倾向。已查中文写小说/AI味，未获得足够可信的中文对照，综合暂定 A，中文待核。",
+        "sources": [
+          "https://genflick.com/blog/muse-spark-vs-gemini-flash-scriptwriting",
+          "https://model-personality.danieltenner.com/models/muse-spark-1-3/"
+        ],
+        "confidence": "low",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "data_analysis": {
+        "score": 85,
+        "tier": "A",
+        "source_tier": "T1_Benchmark",
+        "evidence": "Plotly 原始 DataAnalyticsBench 测试中，Muse Spark 1.3 找到五个隐藏洞察中的三个；未获取明确总分，不补写。专用分析框架和模型判分限制泛化。",
+        "sources": [
+          "https://plotly.com/blog/introducing-dataanalyticsbench/"
+        ],
+        "confidence": "low",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      }
+    },
+    "evaluation_notes": "2026-10-19 batch-02；0–100 为编辑梯队映射而非原始基准分；方法、检索与证据缺口见 data/research/2026-10-19-batch-02.md。",
+    "is_active": true
+  },
+  {
+    "id": "glm-5.3",
+    "name": "GLM-5.3",
+    "provider": "Zhipu AI / Z.ai",
+    "country": "CN",
+    "last_updated": "2026-10-19",
+    "dimensions": {
+      "agentic": {
+        "score": 90,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "Z.ai 自报 Toolathlon Verified 73.0%、AutomationBench v1.0.6 48.2%、ALE-CLI 28.5%。框架、超时和版本与海外模型发布表有差异。",
+        "sources": [
+          "https://z.ai/blog/glm-5.3"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "coding": {
+        "score": 90,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "官方 Terminal-Bench 3.0 28.3%、DeepSWE v1.1 66.9%。DeepSWE 使用 mini-swe-agent、400K context、6h timeout；不是所有成绩都在 1M 输入下取得。",
+        "sources": [
+          "https://z.ai/blog/glm-5.3"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "reasoning": {
+        "score": 90,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "官方 HLE with tools 62.5%，采用 300K 上下文管理、最高生成长度 163840。带工具配置不当作纯无工具推理。",
+        "sources": [
+          "https://z.ai/blog/glm-5.3"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "long_context": {
+        "score": 85,
+        "tier": "A",
+        "source_tier": "T1_Benchmark",
+        "evidence": "补查独立 AA 比较页，明确本型号 AA-LCR v1.1 80%（取整）。这不是全长度 MRCR/RULER；仍缺 512K–1M 衰减曲线。用直接评测替换本批早先 T3 估算。",
+        "sources": [
+          "https://artificialanalysis.ai/models/comparisons/deepseek-v4-1-flash-vs-glm-5-3"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "creative_writing": {
+        "score": 80,
+        "tier": "A",
+        "source_tier": "T2_Community",
+        "evidence": "英文自建 StoryBench 对其叙事评价较高；中文匿名同题原始仓库中较强对手之下，样本少且评委只有一人，提示题材与档位影响明显。中英证据不一致，给 A 下沿，不采通用写作冠军宣传。",
+        "sources": [
+          "https://hemmingway.io/blog/best-ai-for-roleplay/",
+          "https://github.com/EmilisonBlack/llm-novel-writing-bench"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "data_analysis": {
+        "score": 80,
+        "tier": "A",
+        "source_tier": "T2_Community",
+        "evidence": "专门 BIRD/DABstep 检索未获可靠全量结果；llmwise 原始小测试中数据分析 5/5、SQL 5/5，题目较简单且仅五题，不能外推复杂企业分析。",
+        "sources": [
+          "https://llmwise.ai/compare/deepseek-v4-pro-vs-glm-5-3"
+        ],
+        "confidence": "low",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      }
+    },
+    "evaluation_notes": "2026-10-19 batch-02；0–100 为编辑梯队映射而非原始基准分；方法、检索与证据缺口见 data/research/2026-10-19-batch-02.md。",
+    "is_active": true
+  },
+  {
+    "id": "glm-5.3-flash",
+    "name": "GLM-5.3-Flash",
+    "provider": "Zhipu AI / Z.ai",
+    "country": "CN",
+    "last_updated": "2026-10-19",
+    "dimensions": {
+      "agentic": {
+        "score": 90,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "官方 Toolathlon Verified 78.4%、AutomationBench v1.0.6 48.8%；默认 max，须与相同版本和配置比较。",
+        "sources": [
+          "https://z.ai/blog/glm-5.3-flash"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "coding": {
+        "score": 85,
+        "tier": "A",
+        "source_tier": "T1_Benchmark",
+        "evidence": "官方 DeepSWE v1.1 63.4%、Terminal-Bench 2.1 84.3%。与完整版的前沿终端任务仍有差距；不借用 Base 模型 LiveCodeBench 成绩。",
+        "sources": [
+          "https://z.ai/blog/glm-5.3-flash"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "reasoning": {
+        "score": 85,
+        "tier": "A",
+        "source_tier": "T1_Benchmark",
+        "evidence": "官方 HLE with tools 55.3%；最大上下文 300K、带管理策略。仅证明有工具解题表现，不是无工具 GPQA 或 AIME。",
+        "sources": [
+          "https://z.ai/blog/glm-5.3-flash",
+          "https://huggingface.co/zai-org/GLM-5.3-Flash"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "long_context": {
+        "score": 85,
+        "tier": "A",
+        "source_tier": "T1_Benchmark",
+        "evidence": "补查独立 AA 比较页，明确本型号 AA-LCR v1.1 80%（取整）。这不是全长度 MRCR/RULER；仍缺 512K–1M 衰减曲线。用直接评测替换本批早先 T3 估算。",
+        "sources": [
+          "https://artificialanalysis.ai/models/comparisons/deepseek-v4-1-flash-vs-glm-5-3-flash"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "creative_writing": {
+        "score": 80,
+        "tier": "A",
+        "source_tier": "T2_Community",
+        "evidence": "CrucibleMark 原始内容改写/脚本测试可用但节奏偏技术化。中文 XSCT 公开短篇开头题目与模型输出，但只有约 50 字单题、模型裁判；不能把其单题 93 分当综合文学分。",
+        "sources": [
+          "https://www.cruciblemark.com/reports/glm-5-3-flash/review/",
+          "https://www.xsctbench.com/testcase/l_creative_001/glm-5.3-flash"
+        ],
+        "confidence": "low",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "data_analysis": {
+        "score": 90,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "Plotly/Mila DataAnalyticsBench：38/43。专用 Plotly Studio Embedded 环境、OpenRouter 路由、模型判分；与金融/图表任务或通用统计准确率不是同一指标。",
+        "sources": [
+          "https://plotly.com/blog/introducing-dataanalyticsbench/"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      }
+    },
+    "evaluation_notes": "2026-10-19 batch-02；0–100 为编辑梯队映射而非原始基准分；方法、检索与证据缺口见 data/research/2026-10-19-batch-02.md。",
+    "is_active": true
+  },
+  {
+    "id": "deepseek-v4-pro-0813",
+    "name": "DeepSeek V4 Pro 0813",
+    "provider": "DeepSeek",
+    "country": "CN",
+    "last_updated": "2026-10-19",
+    "dimensions": {
+      "agentic": {
+        "score": 85,
+        "tier": "A",
+        "source_tier": "T1_Benchmark",
+        "evidence": "0813 官方 Toolathlon-Verified 74.1%、AutomationBench Public 31.8%；AA 同名 max 的 AutomationBench-AA 为 57%。不同题集与计分口径并列保存，不能混成同一成绩。",
+        "sources": [
+          "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813",
+          "https://artificialanalysis.ai/models/comparisons/deepseek-v4-1-flash-vs-deepseek-v4-pro"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "coding": {
+        "score": 85,
+        "tier": "A",
+        "source_tier": "T1_Benchmark",
+        "evidence": "0813 官方 DeepSWE 62.7%、Terminal-Bench 2.1 87.9%，使用 DeepSeek Harness minimal、max。AA Terminal-Bench 4.0 为 14%（取整），高难新版本有明显瓶颈。",
+        "sources": [
+          "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813",
+          "https://artificialanalysis.ai/models/comparisons/deepseek-v4-1-flash-vs-deepseek-v4-pro"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "reasoning": {
+        "score": 90,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "0813 官方 HLE 无工具/有工具 42.7/60.0；后续 V4.1 技术报告注明 42.7 对应 text-only，因而不将其当完整多模态 HLE 分数。",
+        "sources": [
+          "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813",
+          "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "long_context": {
+        "score": 85,
+        "tier": "A",
+        "source_tier": "T1_Benchmark",
+        "evidence": "AA 明确标为 V4 Pro 0813 max：AA-LCR v1.1 80%（取整），窗口 1M。未直接核到此快照的 MRCR 1M 83.5%，故不从 preview 或聚合网页迁移该数。",
+        "sources": [
+          "https://artificialanalysis.ai/models/comparisons/deepseek-v4-1-flash-vs-deepseek-v4-pro"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "creative_writing": {
+        "score": 80,
+        "tier": "A",
+        "source_tier": "T2_Community",
+        "evidence": "英文 ToneBench 0813 max 80.1/100，仅测长脚本。Foreverse 中文同协议双盲测试中，0813 在两种续写题材落后自家 0716 preview；机械重复控制较好但文体漂移，单链和模型评委限制明显。",
+        "sources": [
+          "https://benchmark.towardsai.com/models/deepseek-v4-pro-0813-max-or.html",
+          "https://foreverse.cn/zh/blog/deepseek-v4-pro-official-fiction-test"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "data_analysis": {
+        "score": 80,
+        "tier": "A",
+        "source_tier": "T3_Estimated",
+        "evidence": "BIRD/DABstep 检索与 SQL/pandas 口碑补查后，未取得明确锁定 0813 的全量专门分析成绩。小测试及生物分析仓库只标 V4 Pro，快照不明，未直接迁移；基于 0813 工具/编程能力保守估算 A 下沿。",
+        "sources": [
+          "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813",
+          "https://artificialanalysis.ai/models/comparisons/deepseek-v4-1-flash-vs-deepseek-v4-pro"
+        ],
+        "confidence": "low",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      }
+    },
+    "evaluation_notes": "2026-10-19 batch-03；评分是编辑梯队映射，非基准直接平均；版本和证据缺口见 data/research/2026-10-19-batch-03.md。",
+    "is_active": true
+  },
+  {
+    "id": "kimi-k3",
+    "name": "Kimi K3",
+    "provider": "Moonshot AI / Kimi",
+    "country": "CN",
+    "last_updated": "2026-10-19",
+    "dimensions": {
+      "agentic": {
+        "score": 90,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "官方 max：Toolathlon-Verified 76.5%、MCP-Atlas 84.2%、OSWorld 2.0 58.3%。各项使用基准特定框架；不与 OSWorld-Verified 84.8% 混为同版任务。",
+        "sources": [
+          "https://huggingface.co/moonshotai/Kimi-K3"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "coding": {
+        "score": 90,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "官方 max：DeepSWE 67.5%、Terminal-Bench 2.1 88.3%、SciCode 58.7%。框架分别依基准使用 Kimi Code/Claude Code 等，保持其条件。",
+        "sources": [
+          "https://huggingface.co/moonshotai/Kimi-K3"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "reasoning": {
+        "score": 90,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "官方 max：GPQA Diamond 93.5%、HLE-Full 无工具/有工具 43.5/56.0。没有将工具带来的提升直接归入纯推理。",
+        "sources": [
+          "https://huggingface.co/moonshotai/Kimi-K3"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "long_context": {
+        "score": 90,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "官方 AA-LCR 74.7 属发布时版本；独立 AA-LCR v1.1 后续页面为 89%（max，取整）。保留版本差异，不写成从 74.7 到 89 的模型升级；1M 窗口不代表全部任务满分。",
+        "sources": [
+          "https://huggingface.co/moonshotai/Kimi-K3",
+          "https://artificialanalysis.ai/models/comparisons/deepseek-v4-1-flash-vs-kimi-k3"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "creative_writing": {
+        "score": 90,
+        "tier": "S",
+        "source_tier": "T2_Community",
+        "evidence": "英文 EQ-Bench 提供原始小说与逐项评分，社区称赞潜台词但也报告事实/时间追踪问题。中文 Foreverse 两书各一条 20 轮续写链，比前代重复更少，仍存在套话/语域限制；综合 S 下沿，不能外推全题材。",
+        "sources": [
+          "https://eqbench.com/results/creative-writing-v3/kimi-k3.html",
+          "https://www.reddit.com/r/SillyTavernAI/comments/1uz5ug0/kimi_k3_a_good_choice_for_rp/",
+          "https://foreverse.cn/zh/research/fiction-bench/kimi-k3"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "data_analysis": {
+        "score": 85,
+        "tier": "A",
+        "source_tier": "T1_Benchmark",
+        "evidence": "官方 max：SpreadsheetBench 2 为 34.8%、Finance Agent v2 为 54.4%，分别覆盖表格操作与金融分析任务；不能拿表格操作成绩宣称通用 SQL 或统计推断同等准确。",
+        "sources": [
+          "https://huggingface.co/moonshotai/Kimi-K3"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      }
+    },
+    "evaluation_notes": "2026-10-19 batch-03；评分是编辑梯队映射，非基准直接平均；版本和证据缺口见 data/research/2026-10-19-batch-03.md。",
+    "is_active": true
+  },
+  {
+    "id": "hy3",
+    "name": "Hy3（正式版对照）",
+    "provider": "Tencent",
+    "country": "CN",
+    "last_updated": "2026-10-19",
+    "dimensions": {
+      "agentic": {
+        "score": 80,
+        "tier": "A",
+        "source_tier": "T1_Benchmark",
+        "evidence": "正式版 AA：AutomationBench-AA 18%、AA-Briefcase v1.1 Elo 947。Tencent 270 位专家真实工作盲测均分 2.67/4 仅作补充；不将 preview 成绩写入本条。",
+        "sources": [
+          "https://artificialanalysis.ai/models/comparisons/hy3-vs-mistral-small-4",
+          "https://huggingface.co/tencent/Hy3"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "coding": {
+        "score": 80,
+        "tier": "A",
+        "source_tier": "T1_Benchmark",
+        "evidence": "正式版官方卡列 SWE-bench Verified 78%、SWE-bench Pro 57.9%；独立 AA Terminal-Bench 4.0 约 1%。新旧任务差异很大，按可用工程能力与高难终端短板综合给 A 下沿。",
+        "sources": [
+          "https://huggingface.co/tencent/Hy3",
+          "https://artificialanalysis.ai/models/comparisons/hy3-vs-mistral-small-4"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "reasoning": {
+        "score": 85,
+        "tier": "A",
+        "source_tier": "T1_Benchmark",
+        "evidence": "正式版官方卡 GPQA Diamond 90.4%；AA HLE 约 33%、CritPt 约 5%。能力覆盖和评测设置不同，不直接平均百分比。",
+        "sources": [
+          "https://huggingface.co/tencent/Hy3",
+          "https://artificialanalysis.ai/models/comparisons/hy3-vs-mistral-small-4"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "long_context": {
+        "score": 85,
+        "tier": "A",
+        "source_tier": "T1_Benchmark",
+        "evidence": "正式版官方窗口 256K；AA-LCR v1.1 79%（取整）。官方称 MRCR 有改进但本轮未可靠转录分长度原图，因此不填写未经确认的 MRCR 数字。",
+        "sources": [
+          "https://huggingface.co/tencent/Hy3",
+          "https://artificialanalysis.ai/models/comparisons/hy3-vs-mistral-small-4"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "creative_writing": {
+        "score": 80,
+        "tier": "A",
+        "source_tier": "T2_Community",
+        "evidence": "中文 SoloEnt 三次首章工作流的人类盲评对 Hy3 给出 61.7/100；这不是本项目标准分，且未给完整调用快照。英文检索主要命中译文与产品介绍，没有足够独立英文小说/RP 原始测试；综合暂定 A 下沿。",
+        "sources": [
+          "https://benchmark.soloent.ai/en/reports/writingflow_18models/"
+        ],
+        "confidence": "low",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "data_analysis": {
+        "score": 75,
+        "tier": "B",
+        "source_tier": "T3_Estimated",
+        "evidence": "英文 BIRD/DABstep 与 SQL/pandas、中文 Excel/财报正式版实测检索未核到可复用专门成绩，很多结果属于 preview。正式版官方明确金融建模、文件生成用途；据此保守估算 B，待独立任务验证。",
+        "sources": [
+          "https://huggingface.co/tencent/Hy3",
+          "https://www.tencent.com/tencent-hunyuan-officially-releases-hy3-advancing-agent-capabilities-and-deeper-product-integration/"
+        ],
+        "confidence": "low",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      }
+    },
+    "evaluation_notes": "2026-10-19 batch-03；评分是编辑梯队映射，非基准直接平均；版本和证据缺口见 data/research/2026-10-19-batch-03.md。",
+    "is_active": true
+  },
+  {
+    "id": "mistral-medium-3.5",
+    "name": "Mistral Medium 3.5",
+    "provider": "Mistral AI",
+    "country": "FR",
+    "last_updated": "2026-10-19",
+    "dimensions": {
+      "agentic": {
+        "score": 75,
+        "tier": "B",
+        "source_tier": "T1_Benchmark",
+        "evidence": "官方 τ³-Telecom 91.4%；独立 AA AutomationBench-AA 仅 6%（页面取整）。领域工具任务与通用 SaaS 流程差距明显，综合映射 B，不将两个协议平均。",
+        "sources": [
+          "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B",
+          "https://artificialanalysis.ai/models/comparisons/mistral-medium-3-5-vs-gpt-5-5"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "coding": {
+        "score": 80,
+        "tier": "A",
+        "source_tier": "T1_Benchmark",
+        "evidence": "官方 SWE-bench Verified 77.6%；AA SciCode 40%，Terminal-Bench 4.0 页面取整为 0%。较早 SWE 测试与新困难终端任务不等价，执行框架影响很大。",
+        "sources": [
+          "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B",
+          "https://artificialanalysis.ai/models/comparisons/mistral-medium-3-5-vs-gpt-5-5"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "reasoning": {
+        "score": 75,
+        "tier": "B",
+        "source_tier": "T1_Benchmark",
+        "evidence": "AA Humanity’s Last Exam 14%（页面取整），用于困难知识与推理的保守 B 级映射；不把综合 Intelligence Index 14 当作推理百分比。",
+        "sources": [
+          "https://artificialanalysis.ai/models/comparisons/mistral-medium-3-5-vs-gpt-5-5"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "long_context": {
+        "score": 80,
+        "tier": "A",
+        "source_tier": "T1_Benchmark",
+        "evidence": "AA-LCR v1.1 69%（页面取整）；采用有效长文推理而非只看窗口。该任务覆盖不代表全窗口小说、所有位置或多轮记忆。",
+        "sources": [
+          "https://artificialanalysis.ai/models/comparisons/mistral-medium-3-5-vs-gpt-5-5"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "creative_writing": {
+        "score": 70,
+        "tier": "B",
+        "source_tier": "T1_Benchmark",
+        "evidence": "作者原始 Creative Story Writing 榜：相对胜率 16%、Bradley–Terry 系数 -2.553。为英文约束故事与模型评委，非中文文学评测。中英口碑检索未找到充分可复核中文对照，中文文笔/翻译腔未确认；保守 B。",
+        "sources": [
+          "https://github.com/lechmazur/writing"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "data_analysis": {
+        "score": 65,
+        "tier": "C",
+        "source_tier": "T1_Benchmark",
+        "evidence": "Plotly DataAnalyticsBench 25/43（58%）；隐藏洞察 0/5、数据质量 0/3。相同 Studio Embedded 框架的 43 题、20M 行单轮测试，非所有 SQL/统计任务。编辑 C 分数不等于原始 58%。",
+        "sources": [
+          "https://plotly.com/blog/mistral-large-4-plotly-data-analytics-bench/"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      }
+    },
+    "evaluation_notes": "2026-10-19 batch-04；0–100 为编辑梯队映射，非原始基准百分比。方法、检索路由及限制见 data/research/2026-10-19-batch-04.md。",
+    "is_active": true
+  },
+  {
+    "id": "claude-mythos-5.1",
+    "name": "Claude Mythos 5.1",
+    "provider": "Anthropic",
+    "country": "US",
+    "last_updated": "2026-10-19",
+    "dimensions": {
+      "agentic": {
+        "score": 95,
+        "tier": "S",
+        "source_tier": "T3_Estimated",
+        "evidence": "官方确认与 Fable 5.1 同底层模型、访问与防护策略不同；以工具和研究能力作同源 S 级估计。未获得独立 Mythos 通用工作流测试，不把 Fable 的 AutomationBench 分数写为 Mythos 实测。",
+        "sources": [
+          "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+          "https://platform.claude.com/docs/en/models/mythos-5-1/overview"
+        ],
+        "confidence": "low",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "coding": {
+        "score": 95,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "官方明确标为 Mythos 5.1 的 Terminal-Bench 4.0 为 60.9%。带终端工具与特定防护配置；不是 Fable 5.1 的 55.8%，也不等同纯算法生成。",
+        "sources": [
+          "https://www.anthropic.com/claude-fable-and-mythos-5-1"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "reasoning": {
+        "score": 95,
+        "tier": "S",
+        "source_tier": "T3_Estimated",
+        "evidence": "英文硬指标及实测补查后，未取得明确属于 Mythos 5.1 的通用推理量化结果；依官方同源说明与 Fable 5.1 的能力档位估计 S。非直接 HLE/GPQA 成绩。",
+        "sources": [
+          "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+          "https://platform.claude.com/docs/en/models/mythos-5-1/overview"
+        ],
+        "confidence": "low",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "long_context": {
+        "score": 90,
+        "tier": "S",
+        "source_tier": "T3_Estimated",
+        "evidence": "官方 1M 上下文、128K 最大输出。未检出可复核 Mythos 5.1 的 RULER/MRCR 全长度结果；同源能力仅支撑暂定 S，窗口规格不证明百万长度无衰减。",
+        "sources": [
+          "https://platform.claude.com/docs/en/models/mythos-5-1/overview",
+          "https://www.anthropic.com/claude-fable-and-mythos-5-1"
+        ],
+        "confidence": "low",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "creative_writing": {
+        "score": 85,
+        "tier": "A",
+        "source_tier": "T3_Estimated",
+        "evidence": "分别检索英文 prose/roleplay 与中文小说/文笔；公开讨论主要测试 Fable 或混称，无法确认 Mythos 直测。按同源能力保守估计 A，不继承 Fable 的写作胜率或中文文风结论。",
+        "sources": [
+          "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+          "https://platform.claude.com/docs/en/models/mythos-5-1/overview"
+        ],
+        "confidence": "low",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "data_analysis": {
+        "score": 90,
+        "tier": "S",
+        "source_tier": "T3_Estimated",
+        "evidence": "BIRD/数据分析及用户实测补查未获得明确 Mythos 5.1 版本的可复核结果；依据同源模型工具与研究能力暂估 S。没有将 Fable 结果或蛋白设计成功率充当 SQL/统计实测。",
+        "sources": [
+          "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+          "https://platform.claude.com/docs/en/models/mythos-5-1/overview"
+        ],
+        "confidence": "low",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      }
+    },
+    "evaluation_notes": "2026-10-19 batch-04；0–100 为编辑梯队映射，非原始基准百分比。方法、检索路由及限制见 data/research/2026-10-19-batch-04.md。",
+    "is_active": false,
+    "activation_notes": "按本次重构方案暂不输出：避免同源模型重复展示；此为展示策略，不新增模型身份的事实结论。"
+  },
+  {
+    "id": "gpt-6-sol",
+    "name": "GPT-6 Sol",
+    "provider": "OpenAI",
+    "country": "US",
+    "last_updated": "2026-10-19",
+    "dimensions": {
+      "agentic": {
+        "score": 90,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "官方 AutomationBench 1.0.6 xhigh 33.2%、Agents’ Last Exam V1 max 56.4%。不同 effort 单列；AA 的同名衍生协议结果不与官方版本混算。",
+        "sources": [
+          "https://openai.com/index/introducing-gpt-6-sol-and-luna/"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "coding": {
+        "score": 90,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "官方 DeepSWE v1.1 max 68.8%；AA Terminal-Bench 4.0 max 44%（页面取整）。分别保留框架与推理档位，非相同协议的加权平均。",
+        "sources": [
+          "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+          "https://artificialanalysis.ai/models/comparisons/gpt-6-sol-vs-gpt-6-sol-xhigh"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "reasoning": {
+        "score": 90,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "AA max 的 Humanity’s Last Exam 48%、CritPt 31%（页面取整）。困难知识/物理推理支持 S 级编辑映射，非全面推理正确率。",
+        "sources": [
+          "https://artificialanalysis.ai/models/comparisons/gpt-6-sol-vs-gpt-6-sol-xhigh"
+        ],
+        "confidence": "medium",
+        "evaluated_version": "GPT-6 Sol (max)",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "long_context": {
+        "score": 90,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "AA-LCR v1.1：max 84%，xhigh 81%（页面取整）。有效长文推理与 1.05M 标称窗口分开，不证明所有长度和位置同等可靠。",
+        "sources": [
+          "https://artificialanalysis.ai/models/comparisons/gpt-6-sol-vs-gpt-6-sol-xhigh"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "creative_writing": {
+        "score": 80,
+        "tier": "A",
+        "source_tier": "T2_Community",
+        "evidence": "英文 NextChapterBench xhigh 五维均值 62（作者 93、榜内均值 63），表现流畅但常直接解释情绪；中文八轮原作对照评价稳定、模板感仍在。A 级为双语综合判断，不能把英文量表当百分比。",
+        "sources": [
+          "https://www.nextchapterbench.com/models/gpt-6-sol-xhigh",
+          "https://finance.sina.com.cn/tech/roll/2026-09-24/doc-iniswmir0727722.shtml"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "data_analysis": {
+        "score": 90,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "Plotly 的原始 Muse Wonder 对照文明确 GPT-6 Sol 同为 41/43。相同 43 题、20M 行 Studio Embedded 代理框架的有限测试；不等于所有表格/统计任务 95% 正确率。",
+        "sources": [
+          "https://plotly.com/blog/muse-wonder-plotly-data-analytics-bench/"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      }
+    },
+    "evaluation_notes": "2026-10-19 batch-04；0–100 为编辑梯队映射，非原始基准百分比。方法、检索路由及限制见 data/research/2026-10-19-batch-04.md。",
+    "is_active": true
+  },
+  {
+    "id": "gpt-6.1-sol",
+    "name": "GPT-6.1 Sol",
+    "provider": "OpenAI",
+    "country": "US",
+    "last_updated": "2026-10-19",
+    "dimensions": {
+      "agentic": {
+        "score": 95,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "AA AutomationBench-AA max 65%、AA-Briefcase v1.1 Elo 1557。明确是 AA 变体与 max 档，不与官方 AutomationBench 1.0.6 直接比较。",
+        "sources": [
+          "https://artificialanalysis.ai/models/comparisons/gpt-6-1-sol-low-vs-gpt-6-1-sol"
+        ],
+        "confidence": "medium",
+        "evaluated_version": "GPT-6.1 Sol (max)",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "coding": {
+        "score": 95,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "AA Terminal-Bench 4.0 max 56%、SciCode 54%（页面取整，SciCode 标为 under review）。采用终端任务为主，不能由发布文相对提升推算缺失的 DeepSWE 精确分数。",
+        "sources": [
+          "https://artificialanalysis.ai/models/comparisons/gpt-6-1-sol-low-vs-gpt-6-1-sol"
+        ],
+        "confidence": "medium",
+        "evaluated_version": "GPT-6.1 Sol (max)",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "reasoning": {
+        "score": 95,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "AA Humanity’s Last Exam max 53%、CritPt 32%（页面取整；CritPt 标为 under review）。S 为编辑档位，并非纯数学或所有推理任务的正确率。",
+        "sources": [
+          "https://artificialanalysis.ai/models/comparisons/gpt-6-1-sol-low-vs-gpt-6-1-sol"
+        ],
+        "confidence": "medium",
+        "evaluated_version": "GPT-6.1 Sol (max)",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "long_context": {
+        "score": 90,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "AA-LCR v1.1 max 83%、low 84%（页面取整）。高 effort 不保证每个基准更高；不将 low 的成绩标为 max，也不由 1.05M 窗口推导全长度理解。",
+        "sources": [
+          "https://artificialanalysis.ai/models/comparisons/gpt-6-1-sol-low-vs-gpt-6-1-sol"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "creative_writing": {
+        "score": 80,
+        "tier": "A",
+        "source_tier": "T2_Community",
+        "evidence": "英文 NextChapterBench high 原作样例赞许清晰受控，也指出平淡、缺鲜明意象；中文原作者的 500 字内心独白对照认为节奏与情感层次弱于 Opus 5.5。单作者/模型评委的有限样本，暂映射 A。",
+        "sources": [
+          "https://www.nextchapterbench.com/models/gpt-6.1-sol-high",
+          "https://qifeidoc.com/en/posts/gpt-6-1-sol-vs-opus-5-5/"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "data_analysis": {
+        "score": 95,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "Plotly/Mila DataAnalyticsBench 43/43，与 Astra 同为该题集满分；43 题、20M 行、Studio Embedded 代理和判分协议的结果，不代表通用分析无误。",
+        "sources": [
+          "https://plotly.com/blog/introducing-dataanalyticsbench/"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      }
+    },
+    "evaluation_notes": "2026-10-19 batch-04；0–100 为编辑梯队映射，非原始基准百分比。方法、检索路由及限制见 data/research/2026-10-19-batch-04.md。",
+    "is_active": true
+  },
+  {
+    "id": "claude-opus-5.5",
+    "name": "Claude Opus 5.5",
+    "provider": "Anthropic",
+    "country": "US",
+    "last_updated": "2026-10-19",
+    "dimensions": {
+      "agentic": {
+        "score": 95,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "官方 AutomationBench 40.0%（Zapier 早期访问、无回退模型，防护干预计失败）；OSWorld 2.1 partial 81.8%。两个基准及 partial/strict 不可混同。",
+        "sources": [
+          "https://www.anthropic.com/claude-opus-5-5"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "coding": {
+        "score": 95,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "官方 Terminal-Bench 4.0 xhigh 66.4% ±2.6 pts；FrontierCode v1.1 Main max 54.4%。生产防护开启，部分专业任务回退其他模型，不是单模型裸能力。",
+        "sources": [
+          "https://www.anthropic.com/claude-opus-5-5"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "reasoning": {
+        "score": 95,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "官方 HLE with tools max 67.7%；AA max/default fallback 的 HLE 页面取整 61%。工具、执行协议与回退配置不同，不能把差值当模型波动。",
+        "sources": [
+          "https://www.anthropic.com/claude-opus-5-5",
+          "https://artificialanalysis.ai/models/comparisons/claude-opus-5-5-vs-grok-4-7"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "long_context": {
+        "score": 90,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "AA-LCR v1.1 max/default fallback 85%（页面取整）。使用长文推理实测而非标称 1M；该成绩不代表整个百万长度和长篇写作记忆。",
+        "sources": [
+          "https://artificialanalysis.ai/models/comparisons/claude-opus-5-5-vs-grok-4-7"
+        ],
+        "confidence": "medium",
+        "evaluated_version": "Claude Opus 5.5 (max, default fallback)",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "creative_writing": {
+        "score": 90,
+        "tier": "S",
+        "source_tier": "T2_Community",
+        "evidence": "英文作者连续使用肯定清晰、结构判断与创作协作；中文八轮同题认为剧情构思和约束遵循强，但纯文笔不总胜 Opus 4.6。另一作者单次四轮认为长文仍有 AI 腔及编造经历问题。小样本综合 S，不是普遍人类盲评结论。",
+        "sources": [
+          "https://alexmcfarland.substack.com/p/opus-55-is-the-best-model-for-writers",
+          "https://finance.sina.com.cn/tech/roll/2026-09-24/doc-iniswmir0727722.shtml",
+          "https://blog.adenxie.com.cn/2026/10/14/2026-10-14-gemini-4-argon-vs-claude-opus-5-5-writing-test/"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "data_analysis": {
+        "score": 90,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "Plotly/Mila DataAnalyticsBench 41/43；43 题、20M 行固定仓库及 Studio Embedded 代理框架。非所有财报/SQL/统计问题的普遍正确率。",
+        "sources": [
+          "https://plotly.com/blog/introducing-dataanalyticsbench/"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      }
+    },
+    "evaluation_notes": "2026-10-19 batch-05；0–100 为编辑梯队映射，非原始基准百分比。方法、检索路由及限制见 data/research/2026-10-19-batch-05.md。",
+    "is_active": true
+  },
+  {
+    "id": "gemini-4-argon",
+    "name": "Gemini 4 Argon",
+    "provider": "Google",
+    "country": "US",
+    "last_updated": "2026-10-19",
+    "dimensions": {
+      "agentic": {
+        "score": 95,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "官方 AutomationBench 51.3%（Zapier private set）；Agent’s Last Exam 39.5% 为 binary pass，ALE-Claw、5 小时、安全过滤开启。不能与其他发布文的 partial 或另一协议 ALE 数字直接比较。",
+        "sources": [
+          "https://deepmind.google/models/model-cards/gemini-4-argon/",
+          "https://deepmind.google/models/evals-methodology/gemini-4-argon"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "coding": {
+        "score": 95,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "官方 DeepSWE v1.1 77.9%（mini-swe harness）、Terminal-Bench 4.0 57.4%；默认最高 thinking、pass@1。不同代码集不平均，也不把竞品自报数字视为相同框架复测。",
+        "sources": [
+          "https://deepmind.google/models/model-cards/gemini-4-argon/",
+          "https://deepmind.google/models/evals-methodology/gemini-4-argon"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "reasoning": {
+        "score": 95,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "官方 RiemannBench 76.0%、LABBench2 88.8%。前者为 Surge 榜结果；后者自测，给 Linux/Python/R 和联网工具。支持数学/科学 S 档，非无工具通用推理准确率。",
+        "sources": [
+          "https://deepmind.google/models/model-cards/gemini-4-argon/",
+          "https://deepmind.google/models/evals-methodology/gemini-4-argon"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "long_context": {
+        "score": 95,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "官方 GraphWalks BFS F1：≤128K 为 99.7%，256K–1M 为 84.2%；后者 200 题。高长度仍有下降，图遍历任务不代表所有长篇文本理解。",
+        "sources": [
+          "https://deepmind.google/models/model-cards/gemini-4-argon/",
+          "https://deepmind.google/models/evals-methodology/gemini-4-argon"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "creative_writing": {
+        "score": 85,
+        "tier": "A",
+        "source_tier": "T2_Community",
+        "evidence": "英文 API 论坛一手 RP 测试肯定沉浸与潜台词；中文四轮原作对照认为长文流畅但文风重、仍有 AI 腔，每题仅一次且网页高思考对比 Claude Code medium。ToneBench high 脚本 76.2/100、Elo 1632，限单频道脚本，综合保守 A。",
+        "sources": [
+          "https://discuss.ai.google.dev/t/first-test-of-gemini-4-argon-much-better-immersion-but-stricter-with-explicit-adult-roleplay-than-gemini-3-x/189556",
+          "https://blog.adenxie.com.cn/2026/10/14/2026-10-14-gemini-4-argon-vs-claude-opus-5-5-writing-test/",
+          "https://benchmark.towardsai.com/models/gemini-4-argon-high.html"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "data_analysis": {
+        "score": 90,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "Plotly DataAnalyticsBench 41/43，找出全部五个隐藏洞察；固定 43 题和 Studio Embedded 代理框架。有限题集表现不等于通用分析满分。",
+        "sources": [
+          "https://plotly.com/blog/gemini-4-argon-plotly-data-analytics-bench/"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      }
+    },
+    "evaluation_notes": "2026-10-19 batch-05；0–100 为编辑梯队映射，非原始基准百分比。方法、检索路由及限制见 data/research/2026-10-19-batch-05.md。",
+    "is_active": true
+  },
+  {
+    "id": "grok-4.7",
+    "name": "Grok 4.7",
+    "provider": "xAI",
+    "country": "US",
+    "last_updated": "2026-10-19",
+    "dimensions": {
+      "agentic": {
+        "score": 90,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "AA-Briefcase v1.1 xhigh 1642 Elo、AutomationBench-AA 66%（当前 AA 页面取整）。官方发布时 Briefcase 1657 为不同快照；本评分采用当前 AA 结果。",
+        "sources": [
+          "https://artificialanalysis.ai/models/comparisons/claude-opus-5-5-vs-grok-4-7"
+        ],
+        "confidence": "medium",
+        "evaluated_version": "Grok 4.7 (xhigh)",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "coding": {
+        "score": 90,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "官方 DeepSWE v1.1 high 71.0%、CursorBench 4.0 xhigh 46.3%、TB4 xhigh 37.6%；AA TB4 xhigh 26%（取整）明显不同。保留报告/框架差异，不能选官方高分声称独立复现。",
+        "sources": [
+          "https://x.ai/news/grok-4-7",
+          "https://artificialanalysis.ai/models/comparisons/claude-opus-5-5-vs-grok-4-7"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "reasoning": {
+        "score": 90,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "AA Humanity’s Last Exam xhigh 43%、CritPt 18%（页面取整，后者 under review）。困难知识推理支持编辑 S 档，非数学专用正确率。",
+        "sources": [
+          "https://artificialanalysis.ai/models/comparisons/claude-opus-5-5-vs-grok-4-7"
+        ],
+        "confidence": "medium",
+        "evaluated_version": "Grok 4.7 (xhigh)",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "long_context": {
+        "score": 85,
+        "tier": "A",
+        "source_tier": "T1_Benchmark",
+        "evidence": "AA-LCR v1.1 xhigh 77%（页面取整），低于部分同档前沿模型；有效长文结果不等于标称 500K 全长度保证。",
+        "sources": [
+          "https://artificialanalysis.ai/models/comparisons/claude-opus-5-5-vs-grok-4-7"
+        ],
+        "confidence": "medium",
+        "evaluated_version": "Grok 4.7 (xhigh)",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "creative_writing": {
+        "score": 80,
+        "tier": "A",
+        "source_tier": "T2_Community",
+        "evidence": "英文社区对 4.7 文风意见分歧，常见对话机械、长 RP 易失控，也有改善反馈；中文 Linux.do 一手讨论同样认为小说文风偏机械。EQ-Bench 长篇榜原始结果 83.0 提供正面反证；综合 A、低置信度，不能将产品路由问题全归模型。",
+        "sources": [
+          "https://www.reddit.com/r/grok/comments/1wvgw2l/grok_47_seems_for_now_to_be_just_another_mediocre/",
+          "https://linux.do/t/topic/2955324",
+          "https://eqbench.com/creative_writing_longform"
+        ],
+        "confidence": "low",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "data_analysis": {
+        "score": 90,
+        "tier": "S",
+        "source_tier": "T1_Benchmark",
+        "evidence": "Plotly 原始 Muse Wonder 对照文明确 Grok 4.7 为 42/43。相同 Studio Embedded 代理的固定仓库测试，非所有数据分析任务；暂不凭单题优势把档位提升到 95。",
+        "sources": [
+          "https://plotly.com/blog/muse-wonder-plotly-data-analytics-bench/"
+        ],
+        "confidence": "medium",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      }
+    },
+    "evaluation_notes": "2026-10-19 batch-05；0–100 为编辑梯队映射，非原始基准百分比。方法、检索路由及限制见 data/research/2026-10-19-batch-05.md。",
+    "is_active": true
+  },
+  {
+    "id": "minimax-m3.1-flash-preview",
+    "name": "MiniMax-M3.1-Flash-Preview",
+    "provider": "MiniMax",
+    "country": "CN",
+    "last_updated": "2026-10-19",
+    "dimensions": {
+      "agentic": {
+        "score": 80,
+        "tier": "A",
+        "source_tier": "T2_Community",
+        "evidence": "中文作者 MiniMax Code max 五项目观察到拆任务、工具搜索与截图复查，但也在完成后反复检查耗时；另有中文一手测试出现约束失误和积分耗尽。没有专属 BFCL/GAIA 标准实测，保守 A；是模型与 agent 产品的联合表现。",
+        "sources": [
+          "https://www.woshipm.com/evaluating/6472683.html",
+          "https://www.techgogogo.com/2026/09/28/minimax-m3-1-flash-benchmark-report/"
+        ],
+        "confidence": "low",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "coding": {
+        "score": 75,
+        "tier": "B",
+        "source_tier": "T1_Benchmark",
+        "evidence": "ModelDial 9/28 私有任务 max：后端 75、前端交互 57、可维护性 53，整体 68.45 不是本项目编程分。站点仅公开任务覆盖和评分规则，缺完整题目/轨迹；中文作者实测分歧大，保守 B、低置信度，不借用 M3 的 SWE。",
+        "sources": [
+          "https://modeldial.com/en/models/MiniMax-M3.1-Flash-Preview?axis=overall&config=MiniMax-M3.1-Flash-Preview~max",
+          "https://modeldial.com/en/method",
+          "https://www.techgogogo.com/2026/09/28/minimax-m3-1-flash-benchmark-report/"
+        ],
+        "confidence": "low",
+        "evaluated_version": "MiniMax-M3.1-Flash-Preview (max)",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "reasoning": {
+        "score": 75,
+        "tier": "B",
+        "source_tier": "T1_Benchmark",
+        "evidence": "ModelDial 私有 Knowledge & Reasoning max 75/100，high 同为 75；包含数学、科学、计算机和常识。题目/样本规模/完整轨迹未充分公开，外部可复现性有限；不是 GPQA 或 M3 的成绩，保守 B。",
+        "sources": [
+          "https://modeldial.com/en/models/MiniMax-M3.1-Flash-Preview?axis=overall&config=MiniMax-M3.1-Flash-Preview~max",
+          "https://modeldial.com/en/datasets"
+        ],
+        "confidence": "low",
+        "evaluated_version": "MiniMax-M3.1-Flash-Preview (max)",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "long_context": {
+        "score": 80,
+        "tier": "A",
+        "source_tier": "T3_Estimated",
+        "evidence": "官方明确该 preview 为 1,000,000 token 窗口；英文 RULER/MRCR 与中英长文实测补查未得该版本有效长度曲线。按长文/代码库用途暂估 A，不把 M3 的 AA-LCR 或窗口规格当有效理解实测。",
+        "sources": [
+          "https://platform.minimax.io/docs/guides/text-generation"
+        ],
+        "confidence": "low",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "creative_writing": {
+        "score": 70,
+        "tier": "B",
+        "source_tier": "T3_Estimated",
+        "evidence": "分别检索英文 prose/roleplay、中文写小说/文笔/翻译腔，未得足够可复核该 preview 的双语文学对照。官方定位为推理/工具/编程，句子约束小测试有失误；只能保守估计 B，未用匿名 space-bunny 身份或 M3 写作成绩。",
+        "sources": [
+          "https://platform.minimax.io/docs/guides/text-generation",
+          "https://www.techgogogo.com/2026/09/28/minimax-m3-1-flash-benchmark-report/"
+        ],
+        "confidence": "low",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      },
+      "data_analysis": {
+        "score": 80,
+        "tier": "A",
+        "source_tier": "T2_Community",
+        "evidence": "中文作者用 2026 中报与 2025 年报测试，完成 PDF 入库、页码溯源与可视化，并区分期内亏损和调整后口径。作者展示的单一财报案例，无大样本 SQL/统计基准或独立复现；保守 A、低置信度。",
+        "sources": [
+          "https://www.woshipm.com/evaluating/6472683.html"
+        ],
+        "confidence": "low",
+        "vendor_score": null,
+        "third_party_score": null,
+        "community_score": null,
+        "raw_metrics": {}
+      }
+    },
+    "evaluation_notes": "2026-10-19 batch-05；0–100 为编辑梯队映射，非原始基准百分比。方法、检索路由及限制见 data/research/2026-10-19-batch-05.md。",
+    "is_active": false,
+    "activation_notes": "按本次重构方案暂不输出：预览版本，独立实测覆盖不足；保留历史评测，待补证后可重新激活。"
+  }
+]

@@ -304,6 +304,7 @@
       "current_version": "Mistral Medium 3.5",
       "version_verified_at": "2026-10-21",
       "previous_record": "data/archive/2026-10-21-before-remaining17.json",
+      "is_new": false,
       "overall_score": 72.6,
       "overall_tier": "B",
       "rank": 22
@@ -601,6 +602,7 @@
       "current_version": "Hy3（正式版对照）",
       "version_verified_at": "2026-10-21",
       "previous_record": "data/archive/2026-10-21-before-remaining17.json",
+      "is_new": false,
       "overall_score": 78.4,
       "overall_tier": "B",
       "rank": 21
@@ -925,6 +927,7 @@
       "current_version": "DeepSeek V4 Pro 0813",
       "version_verified_at": "2026-10-21",
       "previous_record": "data/archive/2026-10-21-before-remaining17.json",
+      "is_new": false,
       "overall_score": 83.3,
       "overall_tier": "A",
       "rank": 20
@@ -1147,6 +1150,7 @@
       },
       "evaluation_notes": "2026-10-27 新增独立版本；六维为编辑梯队分，按25/45/30重归一化，原始百分比不直接加权。检索、映射与缺口见data/research/2026-10-27-batch-01.md。",
       "version_policy": "锁定本名称正式版；不继承其他模型、前代或匿名模型评测。",
+      "is_new": true,
       "overall_score": 84.2,
       "overall_tier": "A",
       "rank": 19
@@ -1453,6 +1457,7 @@
       "current_version": "Gemini 3.8 Flash",
       "version_verified_at": "2026-10-21",
       "previous_record": "data/archive/2026-10-21-before-remaining17.json",
+      "is_new": false,
       "overall_score": 85.6,
       "overall_tier": "S",
       "rank": 18
@@ -1641,6 +1646,7 @@
       "version_sources": [
         "https://www.alibabacloud.com/help/en/model-studio/qwen3-8-max"
       ],
+      "is_new": false,
       "overall_score": 85.8,
       "overall_tier": "S",
       "rank": 17
@@ -1906,6 +1912,7 @@
       "current_version": "GLM-5.3-Flash",
       "version_verified_at": "2026-10-21",
       "previous_record": "data/archive/2026-10-21-before-remaining17.json",
+      "is_new": false,
       "overall_score": 85.8,
       "overall_tier": "S",
       "rank": 16
@@ -2176,6 +2183,7 @@
         "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017"
       ],
       "weights_model_id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "is_new": false,
       "overall_score": 86.1,
       "overall_tier": "S",
       "rank": 15
@@ -2503,6 +2511,7 @@
       "version_policy": "锁定本名称正式版；不继承其他模型、前代或匿名模型评测。",
       "predecessor_model": "minimax-m3.1-flash-preview",
       "weights_status": "available",
+      "is_new": true,
       "overall_score": 86.7,
       "overall_tier": "S",
       "rank": 14
@@ -2717,6 +2726,7 @@
         "https://mimo.xiaomi.com/mimo-v2-6/article",
         "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL"
       ],
+      "is_new": false,
       "overall_score": 86.7,
       "overall_tier": "S",
       "rank": 13
@@ -3048,6 +3058,7 @@
       "current_version": "GLM-5.3",
       "version_verified_at": "2026-10-21",
       "previous_record": "data/archive/2026-10-21-before-remaining17.json",
+      "is_new": false,
       "overall_score": 86.8,
       "overall_tier": "S",
       "rank": 12
@@ -3313,6 +3324,7 @@
       "current_version": "Grok 4.7",
       "version_verified_at": "2026-10-21",
       "previous_record": "data/archive/2026-10-21-before-remaining17.json",
+      "is_new": false,
       "overall_score": 87.0,
       "overall_tier": "S",
       "rank": 11
@@ -3584,6 +3596,7 @@
       "current_version": "GPT-6 Sol",
       "version_verified_at": "2026-10-21",
       "previous_record": "data/archive/2026-10-21-before-remaining17.json",
+      "is_new": false,
       "overall_score": 87.5,
       "overall_tier": "S",
       "rank": 10
@@ -3916,6 +3929,7 @@
       "current_version": "Kimi K3",
       "version_verified_at": "2026-10-21",
       "previous_record": "data/archive/2026-10-21-before-remaining17.json",
+      "is_new": false,
       "overall_score": 88.3,
       "overall_tier": "S",
       "rank": 9
@@ -4240,6 +4254,7 @@
       "current_version": "Muse Spark 1.3",
       "version_verified_at": "2026-10-21",
       "previous_record": "data/archive/2026-10-21-before-remaining17.json",
+      "is_new": false,
       "overall_score": 88.4,
       "overall_tier": "S",
       "rank": 8
@@ -4466,6 +4481,7 @@
       "version_sources": [
         "https://www.anthropic.com/claude-sonnet-5-5"
       ],
+      "is_new": false,
       "overall_score": 90.0,
       "overall_tier": "S+",
       "rank": 7
@@ -4723,6 +4739,7 @@
       "current_version": "GPT-6.1 Sol",
       "version_verified_at": "2026-10-21",
       "previous_record": "data/archive/2026-10-21-before-remaining17.json",
+      "is_new": false,
       "overall_score": 90.8,
       "overall_tier": "S+",
       "rank": 6
@@ -4989,6 +5006,7 @@
       "current_version": "Gemini 4 Argon",
       "version_verified_at": "2026-10-21",
       "previous_record": "data/archive/2026-10-21-before-remaining17.json",
+      "is_new": false,
       "overall_score": 90.8,
       "overall_tier": "S+",
       "rank": 5
@@ -5314,6 +5332,7 @@
       "version_policy": "锁定本名称正式版；不继承其他模型、前代或匿名模型评测。",
       "weights_status": "announced_for_2026-11-04_not_yet_released",
       "predecessor_model": "kimi-k3",
+      "is_new": true,
       "overall_score": 92.2,
       "overall_tier": "S+",
       "rank": 4
@@ -5628,6 +5647,7 @@
       "current_version": "Claude Opus 5.5",
       "version_verified_at": "2026-10-21",
       "previous_record": "data/archive/2026-10-21-before-remaining17.json",
+      "is_new": false,
       "overall_score": 92.5,
       "overall_tier": "S+",
       "rank": 3
@@ -5918,6 +5938,7 @@
       "current_version": "Claude Fable 5.1",
       "version_verified_at": "2026-10-21",
       "previous_record": "data/archive/2026-10-21-before-remaining17.json",
+      "is_new": false,
       "overall_score": 92.5,
       "overall_tier": "S+",
       "rank": 2
@@ -6183,6 +6204,7 @@
       "current_version": "GPT-6 Astra",
       "version_verified_at": "2026-10-21",
       "previous_record": "data/archive/2026-10-21-before-remaining17.json",
+      "is_new": false,
       "overall_score": 93.3,
       "overall_tier": "S+",
       "rank": 1

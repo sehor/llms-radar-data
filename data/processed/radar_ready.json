@@ -306,7 +306,7 @@
       "previous_record": "data/archive/2026-10-21-before-remaining17.json",
       "overall_score": 72.6,
       "overall_tier": "B",
-      "rank": 19
+      "rank": 22
     },
     {
       "id": "hy3",
@@ -603,7 +603,7 @@
       "previous_record": "data/archive/2026-10-21-before-remaining17.json",
       "overall_score": 78.4,
       "overall_tier": "B",
-      "rank": 18
+      "rank": 21
     },
     {
       "id": "deepseek-v4-pro-0813",
@@ -927,7 +927,229 @@
       "previous_record": "data/archive/2026-10-21-before-remaining17.json",
       "overall_score": 83.3,
       "overall_tier": "A",
-      "rank": 17
+      "rank": 20
+    },
+    {
+      "id": "gpt-6.1-terra",
+      "name": "GPT-6.1 Terra",
+      "provider": "OpenAI",
+      "country": "US",
+      "last_updated": "2026-10-27",
+      "dimensions": {
+        "agentic": {
+          "score": 90.0,
+          "tier": "S",
+          "source_tier": "T1_Benchmark",
+          "evidence": "官方ALE medium称与Astra同档、OSWorld 2.1优于前代最高档，支持S下沿90；未读到图中绝对分，不补写。仅厂商自报，尚缺独立专项复测。",
+          "sources": [
+            "https://openai.com/index/introducing-gpt-6-1-terra/"
+          ],
+          "confidence": "medium",
+          "vendor_score": 90,
+          "third_party_score": null,
+          "community_score": null,
+          "raw_metrics": {},
+          "evaluated_version": "GPT-6.1 Terra",
+          "source_assessments": {
+            "vendor": {
+              "score": 90,
+              "source_url": "https://openai.com/index/introducing-gpt-6-1-terra/",
+              "configuration": "ALE medium; OSWorld 2.1 medium/max; release report",
+              "mapping_rationale": "官方ALE medium称与Astra同档、OSWorld 2.1优于前代最高档，支持S下沿90；未读到图中绝对分，不补写。仅厂商自报，尚缺独立专项复测。",
+              "reviewed_at": "2026-10-27"
+            }
+          },
+          "reviewed_at": "2026-10-27",
+          "raw_score": 90.0,
+          "display_score": 75.8,
+          "is_low_confidence": false,
+          "score_method": "weighted"
+        },
+        "coding": {
+          "score": 90.0,
+          "tier": "S",
+          "source_tier": "T1_Benchmark",
+          "evidence": "Terminal-Bench 4.0 max 50.3%，明显高于前代21.5%；对照本库Sol/Astra梯队映射S下沿90，不视作跨harness严格排名。",
+          "sources": [
+            "https://openai.com/index/introducing-gpt-6-1-terra/"
+          ],
+          "confidence": "medium",
+          "vendor_score": 90,
+          "third_party_score": null,
+          "community_score": null,
+          "raw_metrics": {
+            "vendor:Terminal-Bench 4.0": {
+              "value": "50.3%",
+              "source_url": "https://openai.com/index/introducing-gpt-6-1-terra/",
+              "configuration": "max reasoning; vendor release",
+              "retrieved_at": "2026-10-27",
+              "model_version": "GPT-6.1 Terra"
+            }
+          },
+          "evaluated_version": "GPT-6.1 Terra",
+          "source_assessments": {
+            "vendor": {
+              "score": 90,
+              "source_url": "https://openai.com/index/introducing-gpt-6-1-terra/",
+              "configuration": "max reasoning; vendor release; harness not exposed in text",
+              "mapping_rationale": "Terminal-Bench 4.0 max 50.3%，明显高于前代21.5%；对照本库Sol/Astra梯队映射S下沿90，不视作跨harness严格排名。",
+              "reviewed_at": "2026-10-27"
+            }
+          },
+          "reviewed_at": "2026-10-27",
+          "raw_score": 90.0,
+          "display_score": 75.8,
+          "is_low_confidence": false,
+          "score_method": "weighted"
+        },
+        "reasoning": {
+          "score": 85,
+          "tier": "A",
+          "source_tier": "T3_Estimated",
+          "evidence": "官方MMMU-Pro接近Astra/Sol、Terminal-Bench-Science max较强，支持暂定A中85；均偏视觉/工具科研，缺本版本可读GPQA/HLE专项原始表，不以综合指数48或幻觉率代替通用推理跑分。",
+          "sources": [
+            "https://openai.com/index/introducing-gpt-6-1-terra/",
+            "https://artificialanalysis.ai/models/gpt-6-1-terra"
+          ],
+          "confidence": "low",
+          "vendor_score": null,
+          "third_party_score": null,
+          "community_score": null,
+          "raw_metrics": {},
+          "evaluated_version": "GPT-6.1 Terra",
+          "source_assessments": {},
+          "reviewed_at": "2026-10-27",
+          "estimation_reason": "已检索T1/T2/T3；本版本专项证据或校准不足。该score是可撤销编辑估算，三源保持null，不是实测成绩。详见data/research/2026-10-27-batch-01.md",
+          "raw_score": 85,
+          "display_score": 64.0,
+          "is_low_confidence": true,
+          "score_method": "legacy_score"
+        },
+        "long_context": {
+          "score": 80,
+          "tier": "A",
+          "source_tier": "T3_Estimated",
+          "evidence": "API规格1,050,000窗口，仅证明容量。已查AA-LCR/RULER/MRCR；AA主页面无可读单项数，转述82.7%未取得原站表，暂按A下沿80低置信估算；不能声称实测百万token保持率。",
+          "sources": [
+            "https://developers.openai.com/api/docs/models/gpt-6.1-terra"
+          ],
+          "confidence": "low",
+          "vendor_score": null,
+          "third_party_score": null,
+          "community_score": null,
+          "raw_metrics": {
+            "vendor:context window tokens": {
+              "value": 1050000,
+              "source_url": "https://developers.openai.com/api/docs/models/gpt-6.1-terra",
+              "configuration": "API capacity; not effective-context evaluation",
+              "retrieved_at": "2026-10-27",
+              "model_version": "GPT-6.1 Terra"
+            }
+          },
+          "evaluated_version": "GPT-6.1 Terra",
+          "source_assessments": {},
+          "reviewed_at": "2026-10-27",
+          "estimation_reason": "已检索T1/T2/T3；本版本专项证据或校准不足。该score是可撤销编辑估算，三源保持null，不是实测成绩。详见data/research/2026-10-27-batch-01.md",
+          "raw_score": 80,
+          "display_score": 53.1,
+          "is_low_confidence": true,
+          "score_method": "legacy_score"
+        },
+        "creative_writing": {
+          "score": 80,
+          "tier": "A",
+          "source_tier": "T3_Estimated",
+          "evidence": "官方强调自然写作但主要是工作文稿。英文prose/RP、中文小说/文笔检索未取得可校准的本版文学样本；英文短篇榜无Terra条目，EQ榜静态表未返回成绩。A下沿80仅临时估算；翻译腔、说教味、长篇一致性均未核实。",
+          "sources": [
+            "https://openai.com/index/introducing-gpt-6-1-terra/",
+            "https://github.com/lechmazur/writing",
+            "https://eqbench.com/creative_writing.html"
+          ],
+          "confidence": "low",
+          "vendor_score": null,
+          "third_party_score": null,
+          "community_score": null,
+          "raw_metrics": {},
+          "evaluated_version": "GPT-6.1 Terra",
+          "source_assessments": {},
+          "reviewed_at": "2026-10-27",
+          "estimation_reason": "已检索T1/T2/T3；本版本专项证据或校准不足。该score是可撤销编辑估算，三源保持null，不是实测成绩。详见data/research/2026-10-27-batch-01.md",
+          "raw_score": 80,
+          "display_score": 53.1,
+          "is_low_confidence": true,
+          "score_method": "legacy_score"
+        },
+        "data_analysis": {
+          "score": 80.0,
+          "tier": "A",
+          "source_tier": "T1_Benchmark",
+          "evidence": "DualEntry 101题三轮会计准确率78.2%，22模型并列18，三轮均过65.3%；交易分类强、应付/应收弱。仅财会任务代理、推理档未明，保守A下沿80/low，不能外推通用pandas/SQL能力。",
+          "sources": [
+            "https://www.dualentry.com/blog/gpt-6-1-terra-accounting-benchmark"
+          ],
+          "confidence": "low",
+          "vendor_score": null,
+          "third_party_score": 80,
+          "community_score": null,
+          "raw_metrics": {
+            "third_party:Accounting AI Benchmark accuracy": {
+              "value": "78.2%",
+              "source_url": "https://www.dualentry.com/blog/gpt-6-1-terra-accounting-benchmark",
+              "configuration": "101 tasks; three runs; effort unspecified",
+              "retrieved_at": "2026-10-27",
+              "model_version": "GPT-6.1 Terra"
+            },
+            "third_party:all-three-runs pass": {
+              "value": "65.3%",
+              "source_url": "https://www.dualentry.com/blog/gpt-6-1-terra-accounting-benchmark",
+              "configuration": "consistency across three runs",
+              "retrieved_at": "2026-10-27",
+              "model_version": "GPT-6.1 Terra"
+            }
+          },
+          "evaluated_version": "GPT-6.1 Terra",
+          "source_assessments": {
+            "third_party": {
+              "score": 80,
+              "source_url": "https://www.dualentry.com/blog/gpt-6-1-terra-accounting-benchmark",
+              "configuration": "101 accounting tasks; three runs; effort unspecified",
+              "mapping_rationale": "DualEntry 101题三轮会计准确率78.2%，22模型并列18，三轮均过65.3%；交易分类强、应付/应收弱。仅财会任务代理、推理档未明，保守A下沿80/low，不能外推通用pandas/SQL能力。",
+              "reviewed_at": "2026-10-27"
+            }
+          },
+          "reviewed_at": "2026-10-27",
+          "raw_score": 80.0,
+          "display_score": 53.1,
+          "is_low_confidence": true,
+          "score_method": "weighted"
+        }
+      },
+      "is_active": true,
+      "current_version": "GPT-6.1 Terra",
+      "version_verified_at": "2026-10-27",
+      "version_sources": [
+        "https://openai.com/index/introducing-gpt-6-1-terra/",
+        "https://developers.openai.com/api/docs/models/gpt-6.1-terra"
+      ],
+      "openrouter_id": "openai/gpt-6.1-terra",
+      "context_window_tokens": 1050000,
+      "api_pricing": {
+        "currency": "USD",
+        "unit": "per_1m_tokens",
+        "input": 1,
+        "output": 5,
+        "cached_input": 0.05,
+        "reviewed_at": "2026-10-27",
+        "sources": [
+          "https://openai.com/index/introducing-gpt-6-1-terra/",
+          "https://developers.openai.com/api/docs/models/gpt-6.1-terra"
+        ]
+      },
+      "evaluation_notes": "2026-10-27 新增独立版本；六维为编辑梯队分，按25/45/30重归一化，原始百分比不直接加权。检索、映射与缺口见data/research/2026-10-27-batch-01.md。",
+      "version_policy": "锁定本名称正式版；不继承其他模型、前代或匿名模型评测。",
+      "overall_score": 84.2,
+      "overall_tier": "A",
+      "rank": 19
     },
     {
       "id": "gemini-3.8-flash",
@@ -1233,7 +1455,7 @@
       "previous_record": "data/archive/2026-10-21-before-remaining17.json",
       "overall_score": 85.6,
       "overall_tier": "S",
-      "rank": 16
+      "rank": 18
     },
     {
       "id": "qwen3.8-max-0902",
@@ -1421,7 +1643,7 @@
       ],
       "overall_score": 85.8,
       "overall_tier": "S",
-      "rank": 15
+      "rank": 17
     },
     {
       "id": "glm-5.3-flash",
@@ -1686,7 +1908,7 @@
       "previous_record": "data/archive/2026-10-21-before-remaining17.json",
       "overall_score": 85.8,
       "overall_tier": "S",
-      "rank": 14
+      "rank": 16
     },
     {
       "id": "deepseek-v4.1-flash-1017",
@@ -1956,7 +2178,334 @@
       "weights_model_id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "overall_score": 86.1,
       "overall_tier": "S",
-      "rank": 13
+      "rank": 15
+    },
+    {
+      "id": "minimax-m3.1-flash",
+      "name": "MiniMax M3.1 Flash",
+      "provider": "MiniMax",
+      "country": "CN",
+      "last_updated": "2026-10-27",
+      "dimensions": {
+        "agentic": {
+          "score": 90.0,
+          "tier": "S",
+          "source_tier": "T1_Benchmark",
+          "evidence": "官方BankerToolBench76.2与AA Automation73%显示S下沿90；AA Briefcase1473弱于K3.1 Pro1678，不给相同95。小任务Atomic Agent max反复自检仅辅助，不重复加权。",
+          "sources": [
+            "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
+            "https://artificialanalysis.ai/models/comparisons/minimax-m3-1-flash-vs-glm-5-3-flash"
+          ],
+          "confidence": "medium",
+          "vendor_score": 90,
+          "third_party_score": 90,
+          "community_score": null,
+          "raw_metrics": {
+            "vendor:BankerToolBench": {
+              "value": 76.2,
+              "source_url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
+              "configuration": "OpenCode1.17.18; MiniMax-M2.7 judge",
+              "retrieved_at": "2026-10-27",
+              "model_version": "MiniMax M3.1 Flash"
+            },
+            "third_party:AutomationBench-AA": {
+              "value": "73%",
+              "source_url": "https://artificialanalysis.ai/models/comparisons/minimax-m3-1-flash-vs-glm-5-3-flash",
+              "configuration": "AA; rounded",
+              "retrieved_at": "2026-10-27",
+              "model_version": "MiniMax M3.1 Flash"
+            },
+            "third_party:AA-Briefcase v1.1": {
+              "value": "1473 Elo",
+              "source_url": "https://artificialanalysis.ai/models/comparisons/minimax-m3-1-flash-vs-glm-5-3-flash",
+              "configuration": "AA",
+              "retrieved_at": "2026-10-27",
+              "model_version": "MiniMax M3.1 Flash"
+            }
+          },
+          "evaluated_version": "MiniMax M3.1 Flash",
+          "source_assessments": {
+            "vendor": {
+              "score": 90,
+              "source_url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
+              "configuration": "BankerToolBench; OpenCode1.17.18; M2.7 judge",
+              "mapping_rationale": "官方BankerToolBench76.2与AA Automation73%显示S下沿90；AA Briefcase1473弱于K3.1 Pro1678，不给相同95。小任务Atomic Agent max反复自检仅辅助，不重复加权。",
+              "reviewed_at": "2026-10-27"
+            },
+            "third_party": {
+              "score": 90,
+              "source_url": "https://artificialanalysis.ai/models/comparisons/minimax-m3-1-flash-vs-glm-5-3-flash",
+              "configuration": "AA; provider/default reasoning not specified",
+              "mapping_rationale": "官方BankerToolBench76.2与AA Automation73%显示S下沿90；AA Briefcase1473弱于K3.1 Pro1678，不给相同95。小任务Atomic Agent max反复自检仅辅助，不重复加权。",
+              "reviewed_at": "2026-10-27"
+            }
+          },
+          "reviewed_at": "2026-10-27",
+          "raw_score": 90.0,
+          "display_score": 75.8,
+          "is_low_confidence": false,
+          "score_method": "weighted"
+        },
+        "coding": {
+          "score": 83.6,
+          "tier": "A",
+          "source_tier": "T1_Benchmark",
+          "evidence": "官方DeepSWE73.7/TB4 38.1支持S下沿90；AA TB4仅26%，低于同页GLM Flash33%，独立分保守A下沿80。25:45加权83.6，harness差异大，low，不能择优只报厂商成绩。",
+          "sources": [
+            "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
+            "https://artificialanalysis.ai/models/comparisons/minimax-m3-1-flash-vs-glm-5-3-flash"
+          ],
+          "confidence": "low",
+          "vendor_score": 90,
+          "third_party_score": 80,
+          "community_score": null,
+          "raw_metrics": {
+            "vendor:DeepSWE v1.1": {
+              "value": "73.7%",
+              "source_url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
+              "configuration": "mini-SWE-agent2.4.5; 512K",
+              "retrieved_at": "2026-10-27",
+              "model_version": "MiniMax M3.1 Flash"
+            },
+            "vendor:Terminal-Bench 4.0": {
+              "value": "38.1%",
+              "source_url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
+              "configuration": "Codex0.149.1",
+              "retrieved_at": "2026-10-27",
+              "model_version": "MiniMax M3.1 Flash"
+            },
+            "third_party:Terminal-Bench 4.0": {
+              "value": "26%",
+              "source_url": "https://artificialanalysis.ai/models/comparisons/minimax-m3-1-flash-vs-glm-5-3-flash",
+              "configuration": "AA; rounded",
+              "retrieved_at": "2026-10-27",
+              "model_version": "MiniMax M3.1 Flash"
+            }
+          },
+          "evaluated_version": "MiniMax M3.1 Flash",
+          "source_assessments": {
+            "vendor": {
+              "score": 90,
+              "source_url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
+              "configuration": "DeepSWE mini-SWE-agent2.4.5 512K; TB4 Codex0.149.1",
+              "mapping_rationale": "官方DeepSWE73.7/TB4 38.1支持S下沿90；AA TB4仅26%，低于同页GLM Flash33%，独立分保守A下沿80。25:45加权83.6，harness差异大，low，不能择优只报厂商成绩。",
+              "reviewed_at": "2026-10-27"
+            },
+            "third_party": {
+              "score": 80,
+              "source_url": "https://artificialanalysis.ai/models/comparisons/minimax-m3-1-flash-vs-glm-5-3-flash",
+              "configuration": "AA; budget not exposed",
+              "mapping_rationale": "官方DeepSWE73.7/TB4 38.1支持S下沿90；AA TB4仅26%，低于同页GLM Flash33%，独立分保守A下沿80。25:45加权83.6，harness差异大，low，不能择优只报厂商成绩。",
+              "reviewed_at": "2026-10-27"
+            }
+          },
+          "reviewed_at": "2026-10-27",
+          "raw_score": 83.6,
+          "display_score": 60.9,
+          "is_low_confidence": true,
+          "score_method": "weighted"
+        },
+        "reasoning": {
+          "score": 90.0,
+          "tier": "S",
+          "source_tier": "T1_Benchmark",
+          "evidence": "官方HLE文本无工具43.4%、AA HLE48%/CritPt22%均支持本库S下沿90；子集/工具条件不同，原始值不混算。",
+          "sources": [
+            "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
+            "https://artificialanalysis.ai/models/comparisons/minimax-m3-1-flash-vs-glm-5-3-flash"
+          ],
+          "confidence": "medium",
+          "vendor_score": 90,
+          "third_party_score": 90,
+          "community_score": null,
+          "raw_metrics": {
+            "vendor:HLE text-only without tools": {
+              "value": "43.4%",
+              "source_url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
+              "configuration": "2158-question text subset; without tools",
+              "retrieved_at": "2026-10-27",
+              "model_version": "MiniMax M3.1 Flash"
+            },
+            "third_party:Humanity's Last Exam": {
+              "value": "48%",
+              "source_url": "https://artificialanalysis.ai/models/comparisons/minimax-m3-1-flash-vs-glm-5-3-flash",
+              "configuration": "AA; rounded; comparison omits tool/budget details",
+              "retrieved_at": "2026-10-27",
+              "model_version": "MiniMax M3.1 Flash"
+            },
+            "third_party:CritPt": {
+              "value": "22%",
+              "source_url": "https://artificialanalysis.ai/models/comparisons/minimax-m3-1-flash-vs-glm-5-3-flash",
+              "configuration": "AA; rounded",
+              "retrieved_at": "2026-10-27",
+              "model_version": "MiniMax M3.1 Flash"
+            }
+          },
+          "evaluated_version": "MiniMax M3.1 Flash",
+          "source_assessments": {
+            "vendor": {
+              "score": 90,
+              "source_url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
+              "configuration": "HLE text-only2158; without tools",
+              "mapping_rationale": "官方HLE文本无工具43.4%、AA HLE48%/CritPt22%均支持本库S下沿90；子集/工具条件不同，原始值不混算。",
+              "reviewed_at": "2026-10-27"
+            },
+            "third_party": {
+              "score": 90,
+              "source_url": "https://artificialanalysis.ai/models/comparisons/minimax-m3-1-flash-vs-glm-5-3-flash",
+              "configuration": "AA; rounded",
+              "mapping_rationale": "官方HLE文本无工具43.4%、AA HLE48%/CritPt22%均支持本库S下沿90；子集/工具条件不同，原始值不混算。",
+              "reviewed_at": "2026-10-27"
+            }
+          },
+          "reviewed_at": "2026-10-27",
+          "raw_score": 90.0,
+          "display_score": 75.8,
+          "is_low_confidence": false,
+          "score_method": "weighted"
+        },
+        "long_context": {
+          "score": 86.8,
+          "tier": "A",
+          "source_tier": "T1_Benchmark",
+          "evidence": "官方LOCA256K60.3，同表接近GPT-5.6 Sol60.0支持90；AA-LCR v1.1四舍五入80%按本库80–84映射85。不同测试单独映射后25:45加权86.8；缺逐长度衰减曲线，low。",
+          "sources": [
+            "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
+            "https://artificialanalysis.ai/models/comparisons/minimax-m3-1-flash-vs-glm-5-3-flash"
+          ],
+          "confidence": "low",
+          "vendor_score": 90,
+          "third_party_score": 85,
+          "community_score": null,
+          "raw_metrics": {
+            "vendor:LOCA-Bench 256K": {
+              "value": 60.3,
+              "source_url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
+              "configuration": "official implementation; 256K",
+              "retrieved_at": "2026-10-27",
+              "model_version": "MiniMax M3.1 Flash"
+            },
+            "third_party:AA-LCR v1.1": {
+              "value": "80%",
+              "source_url": "https://artificialanalysis.ai/models/comparisons/minimax-m3-1-flash-vs-glm-5-3-flash",
+              "configuration": "AA; rounded; not proof of 1M retention",
+              "retrieved_at": "2026-10-27",
+              "model_version": "MiniMax M3.1 Flash"
+            }
+          },
+          "evaluated_version": "MiniMax M3.1 Flash",
+          "source_assessments": {
+            "vendor": {
+              "score": 90,
+              "source_url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
+              "configuration": "LOCA-Bench256K; official implementation",
+              "mapping_rationale": "官方LOCA256K60.3，同表接近GPT-5.6 Sol60.0支持90；AA-LCR v1.1四舍五入80%按本库80–84映射85。不同测试单独映射后25:45加权86.8；缺逐长度衰减曲线，low。",
+              "reviewed_at": "2026-10-27"
+            },
+            "third_party": {
+              "score": 85,
+              "source_url": "https://artificialanalysis.ai/models/comparisons/minimax-m3-1-flash-vs-glm-5-3-flash",
+              "configuration": "AA-LCR v1.1; rounded",
+              "mapping_rationale": "官方LOCA256K60.3，同表接近GPT-5.6 Sol60.0支持90；AA-LCR v1.1四舍五入80%按本库80–84映射85。不同测试单独映射后25:45加权86.8；缺逐长度衰减曲线，low。",
+              "reviewed_at": "2026-10-27"
+            }
+          },
+          "reviewed_at": "2026-10-27",
+          "raw_score": 86.8,
+          "display_score": 68.2,
+          "is_low_confidence": true,
+          "score_method": "weighted"
+        },
+        "creative_writing": {
+          "score": 75,
+          "tier": "B",
+          "source_tier": "T3_Estimated",
+          "evidence": "英文RP检索摘要正负分歧，打开原帖正文只取到泛论，无足够可复核对照；中文命中多为旧Preview或学术材料，不能当小说证据。暂定B中75/low，三源null；不继承MiniMax-M3短篇榜成绩，不宣称已验证翻译腔、说教味或长篇一致性。",
+          "sources": [
+            "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
+            "https://github.com/lechmazur/writing",
+            "https://www.reddit.com/r/SillyTavernAI/comments/1xam1xk/has_anyone_tried_minimax_m31flash_yet_its_free/"
+          ],
+          "confidence": "low",
+          "vendor_score": null,
+          "third_party_score": null,
+          "community_score": null,
+          "raw_metrics": {},
+          "evaluated_version": "MiniMax M3.1 Flash",
+          "source_assessments": {},
+          "reviewed_at": "2026-10-27",
+          "estimation_reason": "已检索T1/T2/T3；本版本专项证据或校准不足。该score是可撤销编辑估算，三源保持null，不是实测成绩。详见data/research/2026-10-27-batch-01.md",
+          "raw_score": 75,
+          "display_score": 43.1,
+          "is_low_confidence": true,
+          "score_method": "legacy_score"
+        },
+        "data_analysis": {
+          "score": 95.0,
+          "tier": "S",
+          "source_tier": "T1_Benchmark",
+          "evidence": "Plotly正式版41/43达95%，与同测试Opus5.5/Argon同档，映射S中95；不采用匿名版38/43或Preview。题集仅43题，不能外推所有SQL/统计。",
+          "sources": [
+            "https://plotly.com/blog/minimax-m3-1-flash-plotly-data-analytics-bench/"
+          ],
+          "confidence": "medium",
+          "vendor_score": null,
+          "third_party_score": 95,
+          "community_score": null,
+          "raw_metrics": {
+            "third_party:Plotly Data Analytics Bench": {
+              "value": "41/43",
+              "source_url": "https://plotly.com/blog/minimax-m3-1-flash-plotly-data-analytics-bench/",
+              "configuration": "released model; full exam$4.09",
+              "retrieved_at": "2026-10-27",
+              "model_version": "MiniMax M3.1 Flash"
+            }
+          },
+          "evaluated_version": "MiniMax M3.1 Flash",
+          "source_assessments": {
+            "third_party": {
+              "score": 95,
+              "source_url": "https://plotly.com/blog/minimax-m3-1-flash-plotly-data-analytics-bench/",
+              "configuration": "released model; Plotly43-question analytics exam",
+              "mapping_rationale": "Plotly正式版41/43达95%，与同测试Opus5.5/Argon同档，映射S中95；不采用匿名版38/43或Preview。题集仅43题，不能外推所有SQL/统计。",
+              "reviewed_at": "2026-10-27"
+            }
+          },
+          "reviewed_at": "2026-10-27",
+          "raw_score": 95.0,
+          "display_score": 88.2,
+          "is_low_confidence": false,
+          "score_method": "weighted"
+        }
+      },
+      "is_active": true,
+      "current_version": "MiniMax M3.1 Flash",
+      "version_verified_at": "2026-10-27",
+      "version_sources": [
+        "https://www.minimax.io/blog/minimax-m31f",
+        "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash"
+      ],
+      "openrouter_id": "minimax/minimax-m3.1-flash",
+      "context_window_tokens": 1000000,
+      "api_pricing": {
+        "currency": "USD",
+        "unit": "per_1m_tokens",
+        "input": 0.15,
+        "output": 0.6,
+        "cached_input": 0.015,
+        "reviewed_at": "2026-10-27",
+        "sources": [
+          "https://www.minimax.io/blog/minimax-m31f",
+          "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash"
+        ]
+      },
+      "evaluation_notes": "2026-10-27 新增独立版本；六维为编辑梯队分，按25/45/30重归一化，原始百分比不直接加权。检索、映射与缺口见data/research/2026-10-27-batch-01.md。",
+      "version_policy": "锁定本名称正式版；不继承其他模型、前代或匿名模型评测。",
+      "predecessor_model": "minimax-m3.1-flash-preview",
+      "weights_status": "available",
+      "overall_score": 86.7,
+      "overall_tier": "S",
+      "rank": 14
     },
     {
       "id": "mimo-v2.6-pro",
@@ -2170,7 +2719,7 @@
       ],
       "overall_score": 86.7,
       "overall_tier": "S",
-      "rank": 12
+      "rank": 13
     },
     {
       "id": "glm-5.3",
@@ -2501,7 +3050,7 @@
       "previous_record": "data/archive/2026-10-21-before-remaining17.json",
       "overall_score": 86.8,
       "overall_tier": "S",
-      "rank": 11
+      "rank": 12
     },
     {
       "id": "grok-4.7",
@@ -2766,7 +3315,7 @@
       "previous_record": "data/archive/2026-10-21-before-remaining17.json",
       "overall_score": 87.0,
       "overall_tier": "S",
-      "rank": 10
+      "rank": 11
     },
     {
       "id": "gpt-6-sol",
@@ -3037,7 +3586,7 @@
       "previous_record": "data/archive/2026-10-21-before-remaining17.json",
       "overall_score": 87.5,
       "overall_tier": "S",
-      "rank": 9
+      "rank": 10
     },
     {
       "id": "kimi-k3",
@@ -3369,7 +3918,7 @@
       "previous_record": "data/archive/2026-10-21-before-remaining17.json",
       "overall_score": 88.3,
       "overall_tier": "S",
-      "rank": 8
+      "rank": 9
     },
     {
       "id": "muse-spark-1.3",
@@ -3693,7 +4242,7 @@
       "previous_record": "data/archive/2026-10-21-before-remaining17.json",
       "overall_score": 88.4,
       "overall_tier": "S",
-      "rank": 7
+      "rank": 8
     },
     {
       "id": "claude-sonnet-5.5",
@@ -3919,7 +4468,7 @@
       ],
       "overall_score": 90.0,
       "overall_tier": "S+",
-      "rank": 6
+      "rank": 7
     },
     {
       "id": "gpt-6.1-sol",
@@ -4176,7 +4725,7 @@
       "previous_record": "data/archive/2026-10-21-before-remaining17.json",
       "overall_score": 90.8,
       "overall_tier": "S+",
-      "rank": 5
+      "rank": 6
     },
     {
       "id": "gemini-4-argon",
@@ -4441,6 +4990,331 @@
       "version_verified_at": "2026-10-21",
       "previous_record": "data/archive/2026-10-21-before-remaining17.json",
       "overall_score": 90.8,
+      "overall_tier": "S+",
+      "rank": 5
+    },
+    {
+      "id": "kimi-k3.1-pro",
+      "name": "Kimi K3.1 Pro",
+      "provider": "Moonshot AI",
+      "country": "CN",
+      "last_updated": "2026-10-27",
+      "dimensions": {
+        "agentic": {
+          "score": 95.0,
+          "tier": "S",
+          "source_tier": "T1_Benchmark",
+          "evidence": "AA Automation73%、Briefcase1678与官方长程工程61.2支持S档；独立多任务+知识工作优于本库K3/1017，映射95。官方61.2为内部编码任务，不额外凑独立来源。",
+          "sources": [
+            "https://artificialanalysis.ai/models/comparisons/deepseek-v4-1-flash-1017-vs-kimi-k3-1-pro",
+            "https://www.kimi.com/en/blog/kimi-k3-1-pro"
+          ],
+          "confidence": "medium",
+          "vendor_score": null,
+          "third_party_score": 95,
+          "community_score": null,
+          "raw_metrics": {
+            "third_party:AutomationBench-AA": {
+              "value": "73%",
+              "source_url": "https://artificialanalysis.ai/models/comparisons/deepseek-v4-1-flash-1017-vs-kimi-k3-1-pro",
+              "configuration": "AA; rounded",
+              "retrieved_at": "2026-10-27",
+              "model_version": "Kimi K3.1 Pro"
+            },
+            "third_party:AA-Briefcase v1.1": {
+              "value": "1678 Elo",
+              "source_url": "https://artificialanalysis.ai/models/comparisons/deepseek-v4-1-flash-1017-vs-kimi-k3-1-pro",
+              "configuration": "AA",
+              "retrieved_at": "2026-10-27",
+              "model_version": "Kimi K3.1 Pro"
+            },
+            "vendor:Kimi Code Bench 3.0 Long-horizon": {
+              "value": "61.2%",
+              "source_url": "https://www.kimi.com/en/blog/kimi-k3-1-pro",
+              "configuration": "max; temperature1 top_p0.95; Claude Code",
+              "retrieved_at": "2026-10-27",
+              "model_version": "Kimi K3.1 Pro"
+            }
+          },
+          "evaluated_version": "Kimi K3.1 Pro",
+          "source_assessments": {
+            "third_party": {
+              "score": 95,
+              "source_url": "https://artificialanalysis.ai/models/comparisons/deepseek-v4-1-flash-1017-vs-kimi-k3-1-pro",
+              "configuration": "AA K3.1 Pro; reasoning budget not specified in comparison table",
+              "mapping_rationale": "AA Automation73%、Briefcase1678与官方长程工程61.2支持S档；独立多任务+知识工作优于本库K3/1017，映射95。官方61.2为内部编码任务，不额外凑独立来源。",
+              "reviewed_at": "2026-10-27"
+            }
+          },
+          "reviewed_at": "2026-10-27",
+          "raw_score": 95.0,
+          "display_score": 88.2,
+          "is_low_confidence": false,
+          "score_method": "weighted"
+        },
+        "coding": {
+          "score": 95.0,
+          "tier": "S",
+          "source_tier": "T1_Benchmark",
+          "evidence": "官方TB4 max65.7%、AA同版67%（四舍五入）支持S中95；不同harness结果分别记录，不直接平均原始百分比。SciCode61%标under review，仅参考。",
+          "sources": [
+            "https://www.kimi.com/en/blog/kimi-k3-1-pro",
+            "https://artificialanalysis.ai/models/comparisons/deepseek-v4-1-flash-1017-vs-kimi-k3-1-pro"
+          ],
+          "confidence": "medium",
+          "vendor_score": 95,
+          "third_party_score": 95,
+          "community_score": null,
+          "raw_metrics": {
+            "vendor:Terminal-Bench 4.0": {
+              "value": "65.7%",
+              "source_url": "https://www.kimi.com/en/blog/kimi-k3-1-pro",
+              "configuration": "max; Claude Code; temperature1 top_p0.95",
+              "retrieved_at": "2026-10-27",
+              "model_version": "Kimi K3.1 Pro"
+            },
+            "third_party:Terminal-Bench 4.0": {
+              "value": "67%",
+              "source_url": "https://artificialanalysis.ai/models/comparisons/deepseek-v4-1-flash-1017-vs-kimi-k3-1-pro",
+              "configuration": "AA; rounded",
+              "retrieved_at": "2026-10-27",
+              "model_version": "Kimi K3.1 Pro"
+            }
+          },
+          "evaluated_version": "Kimi K3.1 Pro",
+          "source_assessments": {
+            "vendor": {
+              "score": 95,
+              "source_url": "https://www.kimi.com/en/blog/kimi-k3-1-pro",
+              "configuration": "max; Claude Code; temperature1 top_p0.95",
+              "mapping_rationale": "官方TB4 max65.7%、AA同版67%（四舍五入）支持S中95；不同harness结果分别记录，不直接平均原始百分比。SciCode61%标under review，仅参考。",
+              "reviewed_at": "2026-10-27"
+            },
+            "third_party": {
+              "score": 95,
+              "source_url": "https://artificialanalysis.ai/models/comparisons/deepseek-v4-1-flash-1017-vs-kimi-k3-1-pro",
+              "configuration": "AA comparison; budget not specified",
+              "mapping_rationale": "官方TB4 max65.7%、AA同版67%（四舍五入）支持S中95；不同harness结果分别记录，不直接平均原始百分比。SciCode61%标under review，仅参考。",
+              "reviewed_at": "2026-10-27"
+            }
+          },
+          "reviewed_at": "2026-10-27",
+          "raw_score": 95.0,
+          "display_score": 88.2,
+          "is_low_confidence": false,
+          "score_method": "weighted"
+        },
+        "reasoning": {
+          "score": 90.0,
+          "tier": "S",
+          "source_tier": "T1_Benchmark",
+          "evidence": "AA HLE52%、CritPt25%，对照本库K3 HLE47%与1017 43%支持S下沿90；不把综合指数55当通用推理成绩。",
+          "sources": [
+            "https://artificialanalysis.ai/models/comparisons/deepseek-v4-1-flash-1017-vs-kimi-k3-1-pro"
+          ],
+          "confidence": "medium",
+          "vendor_score": null,
+          "third_party_score": 90,
+          "community_score": null,
+          "raw_metrics": {
+            "third_party:Humanity's Last Exam": {
+              "value": "52%",
+              "source_url": "https://artificialanalysis.ai/models/comparisons/deepseek-v4-1-flash-1017-vs-kimi-k3-1-pro",
+              "configuration": "AA; rounded; tool/budget details not exposed in comparison",
+              "retrieved_at": "2026-10-27",
+              "model_version": "Kimi K3.1 Pro"
+            },
+            "third_party:CritPt": {
+              "value": "25%",
+              "source_url": "https://artificialanalysis.ai/models/comparisons/deepseek-v4-1-flash-1017-vs-kimi-k3-1-pro",
+              "configuration": "AA; rounded",
+              "retrieved_at": "2026-10-27",
+              "model_version": "Kimi K3.1 Pro"
+            }
+          },
+          "evaluated_version": "Kimi K3.1 Pro",
+          "source_assessments": {
+            "third_party": {
+              "score": 90,
+              "source_url": "https://artificialanalysis.ai/models/comparisons/deepseek-v4-1-flash-1017-vs-kimi-k3-1-pro",
+              "configuration": "AA; same named version; effort unspecified",
+              "mapping_rationale": "AA HLE52%、CritPt25%，对照本库K3 HLE47%与1017 43%支持S下沿90；不把综合指数55当通用推理成绩。",
+              "reviewed_at": "2026-10-27"
+            }
+          },
+          "reviewed_at": "2026-10-27",
+          "raw_score": 90.0,
+          "display_score": 75.8,
+          "is_low_confidence": false,
+          "score_method": "weighted"
+        },
+        "long_context": {
+          "score": 90.0,
+          "tier": "S",
+          "source_tier": "T1_Benchmark",
+          "evidence": "AA-LCR v1.1 86%，按本库85–89区间映射S下沿90；未拿到逐长度曲线，不用官方1M规格替代有效长度测试。",
+          "sources": [
+            "https://artificialanalysis.ai/models/comparisons/deepseek-v4-1-flash-1017-vs-kimi-k3-1-pro"
+          ],
+          "confidence": "medium",
+          "vendor_score": null,
+          "third_party_score": 90,
+          "community_score": null,
+          "raw_metrics": {
+            "third_party:AA-LCR v1.1": {
+              "value": "86%",
+              "source_url": "https://artificialanalysis.ai/models/comparisons/deepseek-v4-1-flash-1017-vs-kimi-k3-1-pro",
+              "configuration": "AA; rounded",
+              "retrieved_at": "2026-10-27",
+              "model_version": "Kimi K3.1 Pro"
+            }
+          },
+          "evaluated_version": "Kimi K3.1 Pro",
+          "source_assessments": {
+            "third_party": {
+              "score": 90,
+              "source_url": "https://artificialanalysis.ai/models/comparisons/deepseek-v4-1-flash-1017-vs-kimi-k3-1-pro",
+              "configuration": "AA-LCR v1.1; rounded; length curve not exposed",
+              "mapping_rationale": "AA-LCR v1.1 86%，按本库85–89区间映射S下沿90；未拿到逐长度曲线，不用官方1M规格替代有效长度测试。",
+              "reviewed_at": "2026-10-27"
+            }
+          },
+          "reviewed_at": "2026-10-27",
+          "raw_score": 90.0,
+          "display_score": 75.8,
+          "is_low_confidence": false,
+          "score_method": "weighted"
+        },
+        "creative_writing": {
+          "score": 90.0,
+          "tier": "S",
+          "source_tier": "T1_Benchmark",
+          "evidence": "英文约束短篇high预计胜率85%、中文FeelFish三案例均符合需求，但后者单次AI裁判并非真人共识。综合支持S下沿90/low。LINUX DO意象笨拙反馈仅单人体验；翻译腔/说教味与长篇一致性仍未充分验证。",
+          "sources": [
+            "https://www.feelfish.com/en/eval/reports/model-eval-2026-10-24",
+            "https://linux.do/t/topic/3078914",
+            "https://www.reddit.com/r/SillyTavernAI/comments/1xdkwyu/kimi_k31_pro_is_here/",
+            "https://github.com/lechmazur/writing"
+          ],
+          "confidence": "low",
+          "vendor_score": null,
+          "third_party_score": 90,
+          "community_score": null,
+          "raw_metrics": {
+            "third_party:English story estimated win chance": {
+              "value": "85%",
+              "source_url": "https://github.com/lechmazur/writing",
+              "configuration": "high; comparison score2.723; 400 short stories",
+              "retrieved_at": "2026-10-27",
+              "model_version": "Kimi K3.1 Pro"
+            },
+            "third_party:Chinese novel opening combined scores": {
+              "value": [
+                89,
+                87,
+                87
+              ],
+              "source_url": "https://www.feelfish.com/en/eval/reports/model-eval-2026-10-24",
+              "configuration": "3 Chinese openings; one run per case; rule compliance50% + model judge50%; not prose-only score",
+              "retrieved_at": "2026-10-27",
+              "model_version": "Kimi K3.1 Pro"
+            }
+          },
+          "evaluated_version": "Kimi K3.1 Pro",
+          "source_assessments": {
+            "third_party": {
+              "score": 90,
+              "source_url": "https://github.com/lechmazur/writing",
+              "configuration": "high; 400 English stories; pairwise model judges; Chinese cross-check FeelFish",
+              "mapping_rationale": "英文约束短篇high预计胜率85%、中文FeelFish三案例均符合需求，但后者单次AI裁判并非真人共识。综合支持S下沿90/low。LINUX DO意象笨拙反馈仅单人体验；翻译腔/说教味与长篇一致性仍未充分验证。",
+              "reviewed_at": "2026-10-27"
+            }
+          },
+          "reviewed_at": "2026-10-27",
+          "raw_score": 90.0,
+          "display_score": 75.8,
+          "is_low_confidence": true,
+          "score_method": "weighted"
+        },
+        "data_analysis": {
+          "score": 93.2,
+          "tier": "S",
+          "source_tier": "T1_Benchmark",
+          "evidence": "Plotly42/43支持S中95；官方OfficeQA Pro v2 64.4支持S下沿90。两类来源25:45重归一化93.2；43题有限、工具环境不等同裸API，保留medium。",
+          "sources": [
+            "https://www.kimi.com/en/blog/kimi-k3-1-pro",
+            "https://plotly.com/blog/kimi-k3-1-pro-plotly-data-analytics-bench/"
+          ],
+          "confidence": "medium",
+          "vendor_score": 90,
+          "third_party_score": 95,
+          "community_score": null,
+          "raw_metrics": {
+            "vendor:OfficeQA Pro v2": {
+              "value": 64.4,
+              "source_url": "https://www.kimi.com/en/blog/kimi-k3-1-pro",
+              "configuration": "max; official report",
+              "retrieved_at": "2026-10-27",
+              "model_version": "Kimi K3.1 Pro"
+            },
+            "third_party:Plotly Data Analytics Bench": {
+              "value": "42/43",
+              "source_url": "https://plotly.com/blog/kimi-k3-1-pro-plotly-data-analytics-bench/",
+              "configuration": "43 questions; full exam $13.47",
+              "retrieved_at": "2026-10-27",
+              "model_version": "Kimi K3.1 Pro"
+            }
+          },
+          "evaluated_version": "Kimi K3.1 Pro",
+          "source_assessments": {
+            "vendor": {
+              "score": 90,
+              "source_url": "https://www.kimi.com/en/blog/kimi-k3-1-pro",
+              "configuration": "max; OfficeQA Pro v2; vendor report",
+              "mapping_rationale": "Plotly42/43支持S中95；官方OfficeQA Pro v2 64.4支持S下沿90。两类来源25:45重归一化93.2；43题有限、工具环境不等同裸API，保留medium。",
+              "reviewed_at": "2026-10-27"
+            },
+            "third_party": {
+              "score": 95,
+              "source_url": "https://plotly.com/blog/kimi-k3-1-pro-plotly-data-analytics-bench/",
+              "configuration": "Plotly 43-question analytics exam; budget not specified",
+              "mapping_rationale": "Plotly42/43支持S中95；官方OfficeQA Pro v2 64.4支持S下沿90。两类来源25:45重归一化93.2；43题有限、工具环境不等同裸API，保留medium。",
+              "reviewed_at": "2026-10-27"
+            }
+          },
+          "reviewed_at": "2026-10-27",
+          "raw_score": 93.2,
+          "display_score": 83.7,
+          "is_low_confidence": false,
+          "score_method": "weighted"
+        }
+      },
+      "is_active": true,
+      "current_version": "Kimi K3.1 Pro",
+      "version_verified_at": "2026-10-27",
+      "version_sources": [
+        "https://www.kimi.com/en/blog/kimi-k3-1-pro",
+        "https://plotly.com/blog/kimi-k3-1-pro-plotly-data-analytics-bench/"
+      ],
+      "openrouter_id": "moonshotai/kimi-k3.1-pro",
+      "context_window_tokens": 1000000,
+      "api_pricing": {
+        "currency": "USD",
+        "unit": "per_1m_tokens",
+        "input": 2,
+        "output": 10,
+        "cached_input": 0.2,
+        "reviewed_at": "2026-10-27",
+        "sources": [
+          "https://www.kimi.com/en/blog/kimi-k3-1-pro",
+          "https://plotly.com/blog/kimi-k3-1-pro-plotly-data-analytics-bench/"
+        ]
+      },
+      "evaluation_notes": "2026-10-27 新增独立版本；六维为编辑梯队分，按25/45/30重归一化，原始百分比不直接加权。检索、映射与缺口见data/research/2026-10-27-batch-01.md。",
+      "version_policy": "锁定本名称正式版；不继承其他模型、前代或匿名模型评测。",
+      "weights_status": "announced_for_2026-11-04_not_yet_released",
+      "predecessor_model": "kimi-k3",
+      "overall_score": 92.2,
       "overall_tier": "S+",
       "rank": 4
     },
